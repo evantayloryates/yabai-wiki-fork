@@ -6,7 +6,7 @@ If you find anything you want to improve or add, feel free to do so. Currently, 
 
 If you want to request a topic for this wiki to address, head over to [issue #5](https://github.com/koekeishiya/yabai/issues/5).
 
-## What is *yabai*
+## What is *yabai*?
 
 *yabai* us a tiling window manager for macOS 10.14 and above. It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without having to 
 
