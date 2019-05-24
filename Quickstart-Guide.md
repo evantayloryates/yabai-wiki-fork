@@ -1,5 +1,3 @@
-## Quickstart guide
-
 *yabai* can be installed via Homebrew from a custom tap. It does, however, require you to disable *System Integrity Protection* ("rootless"), because it controls windows by acting through _Dock.app_—which is the sole owner of the main connection to the window server.
 
 - Disable *System Integrity Protection*
