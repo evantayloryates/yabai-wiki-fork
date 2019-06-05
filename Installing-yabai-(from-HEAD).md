@@ -38,6 +38,8 @@ brew services start yabai
 pkill Dock
 ```
 
+### Updating to latest HEAD
+
 To upgrade yabai to the latest version from HEAD, simply reinstall it with Homebrew, codesign it, reinstall the scripting addition and restart *Dock.app* again:
 
 ```sh
@@ -53,4 +55,26 @@ sudo yabai --install-sa
 
 # load the scripting addition
 pkill Dock
+```
+
+### Getting notified about available updates
+
+If you want `yabai` to notify you when an update is available, add the following code to your `~/.yabairc` file. Note that this requires you to install `jq` and `terminal-notifier`, both of which are available from Homebrew.
+
+```sh
+function check_for_updates() {
+        set -o pipefail
+        installed="$(brew info --json koekeishiya/formulae/yabai | jq -r '.[0].installed[0].version')"
+        remote="HEAD-$(git ls-remote https://github.com/koekeishiya/yabai.git HEAD | awk '{print substr($1,1,7)}')"
+
+        if [ ${?} -ne 0 ]; then
+                terminal-notifier -title "$(yabai --version)" -message "Failed to check for updates"
+        elif [[ "${installed}" == "${remote}" ]]; then
+                terminal-notifier -title "$(yabai --version)" -message "Configuration loaded"
+        else
+                terminal-notifier -title "$(yabai --version)" -message "There is an update available for yabai"
+        fi
+}
+
+check_for_updates &
 ```
