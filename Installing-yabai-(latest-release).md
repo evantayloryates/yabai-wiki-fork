@@ -23,7 +23,9 @@ brew services start yabai
 pkill Dock
 ```
 
-To upgrade yabai to the latest version, simply upgrade it with Homebrew, reinstall the scripting addition and restart *Dock.app* again:
+### Updating to the latest release
+
+To update yabai to the latest version, simply upgrade it with Homebrew, reinstall the scripting addition and restart *Dock.app* again:
 
 ```sh
 # stop, upgrade, start yabai
