@@ -8,16 +8,14 @@ First, open `Keychain Access.app`. In its menu, navigate to `Keychain Access`, t
 
 Click `Create`, then `Continue` to create the certificate.
 
-Now onto installing *yabai*:
+Now onto installing yabai:
 
 ```sh
 brew install koekeishiya/formulae/yabai --HEAD
 codesign -fs 'yabai-cert' $(which yabai)
 ```
 
-Now run *yabai* once. It will quit and show a dialog asking for accessibility permissions.
-
-Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Add `yabai` manually by using the `+` labelled button. When installed using Homebrew, *yabai* will usually be at `/usr/local/bin/yabai`. Check the box next to `yabai` to allow accessibility permissions.
+Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Add `yabai` manually by using the `+` labelled button. When installed using Homebrew, yabai will usually be at `/usr/local/bin/yabai`. Check the box next to `yabai` to allow accessibility permissions.
 
 Now install the scripting addition.
 
@@ -64,7 +62,7 @@ killall Dock
 
 ### Auto updating from HEAD
 
-The below snippet makes `yabai` check for updates whenever it starts and automatically installs them for you, only requiring you to enter your password. Just put it at the end of your yabai configuration file and forget about it.
+The below snippet makes yabai check for updates whenever it starts and automatically installs them for you, only requiring you to enter your password. Just put it at the end of your yabai configuration file and forget about it.
 
 ```sh
 # set codesigning certificate name here (default: yabai-cert)
