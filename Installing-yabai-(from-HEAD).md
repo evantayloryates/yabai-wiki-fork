@@ -68,9 +68,9 @@ killall Dock
 
 The below snippet makes `yabai` check for updates whenever it starts and automatically installs them for you, only requiring you to enter your password. Just put it at the end of your yabai configuration file and forget about it.
 
-Please note that this requires tabstops (no spaces!) in front of the heredoc delimiters EOM and EOF.
+Please note that this requires tabstops (no spaces!) in front of the heredocs between the delimiters EOM and EOF.
 
-```sh
+```
 # set codesigning certificate name here (default: yabai-cert)
 YABAI_CERT=
 
