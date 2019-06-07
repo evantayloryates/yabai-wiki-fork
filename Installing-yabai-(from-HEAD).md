@@ -68,9 +68,7 @@ killall Dock
 
 The below snippet makes `yabai` check for updates whenever it starts and automatically installs them for you, only requiring you to enter your password. Just put it at the end of your yabai configuration file and forget about it.
 
-Please note that this requires tabstops (no spaces!) in front of the heredocs between the delimiters EOM and EOF.
-
-```
+```sh
 # set codesigning certificate name here (default: yabai-cert)
 YABAI_CERT=
 
@@ -78,10 +76,10 @@ function main() {
     if check_for_updates; then
         install_updates ${YABAI_CERT}
     else
-        osascript <<- EOM
+        osascript << EOM
             display notification "Configuration loaded." ¬
                 with title "$(yabai --version)"
-        EOM
+EOM
     fi
 }
 
@@ -104,7 +102,7 @@ function check_for_updates() {
 function install_updates() {
     script=$(mktemp)
 
-    cat > ${script} <<- EOF
+    cat > ${script} << EOF
         #! /usr/bin/env sh
 
         clear
@@ -124,8 +122,7 @@ function install_updates() {
 
         ps -eo pid,comm | grep -v grep | grep -i Terminal | tail -1 \
             | awk '{print $1}' | xargs kill
-    EOF
-
+EOF
 
     chmod +x ${script}
     open -FWnb com.apple.Terminal ${script}
