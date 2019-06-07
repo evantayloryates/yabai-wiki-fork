@@ -1,4 +1,6 @@
-- [Home / Quickstart Guide](https://github.com/koekeishiya/yabai/wiki)
+- [Home](https://github.com/koekeishiya/yabai/wiki)
+  - [What is yabai?](https://github.com/koekeishiya/yabai/wiki#what-is-yabai)
+  - [Quickstart guide](https://github.com/koekeishiya/yabai/wiki#quickstart-guide)
 - [Disabling System Integrity Protection](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)
 - [Install latest release](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release))
   - [Installing updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#updating-to-the-latest-release)
