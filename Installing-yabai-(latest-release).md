@@ -20,7 +20,7 @@ To run yabai, simply start it and then restart *Dock.app* to load the scripting 
 brew services start yabai
 
 # load the scripting addition
-pkill Dock
+killall Dock
 ```
 
 ### Updating to the latest release
@@ -38,5 +38,5 @@ sudo yabai --uninstall-sa
 sudo yabai --install-sa
 
 # load the scripting addition
-pkill Dock
+killall Dock
 ```
