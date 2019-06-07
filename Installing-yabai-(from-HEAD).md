@@ -43,38 +43,94 @@ pkill Dock
 To upgrade yabai to the latest version from HEAD, simply reinstall it with Homebrew, codesign it, reinstall the scripting addition and restart *Dock.app* again:
 
 ```sh
-# stop, reinstall, codesign, start yabai
-brew services stop yabai
-brew reinstall yabai
-codesign -fs 'yabai-cert' $(which yabai)
-brew services start yabai
+# set codesigning certificate name here (default: yabai-cert)
+export YABAI_CERT=yabai-cert
+
+# stop yabai
+brew services stop koekeishiya/formulae/yabai
+
+# reinstall yabai
+brew reinstall koekeishiya/formulae/yabai
+codesign -fs "${YABAI_CERT:-yabai-cert}" "$(brew --prefix yabai)/bin/yabai"
 
 # reinstall the scripting addition
 sudo yabai --uninstall-sa
 sudo yabai --install-sa
 
+# start yabai
+brew services start koekeishiya/formulae/yabai
+
 # load the scripting addition
-pkill Dock
+killall Dock
 ```
 
-### Getting notified about available updates
+### Auto updating from HEAD
 
-If you want `yabai` to notify you when an update is available, add the following code to your `~/.yabairc` file. Note that this requires you to install `jq` and `terminal-notifier`, both of which are available from Homebrew.
+The below snippet makes `yabai` check for updates whenever it starts and automatically installs them for you, only requiring you to enter your password. Just put it at the end of your yabai configuration file and forget about it.
+
+Please note that this requires tabstops (no spaces!) in front of the heredoc delimiters EOM and EOF.
 
 ```sh
-function check_for_updates() {
-        set -o pipefail
-        installed="$(brew info --json koekeishiya/formulae/yabai | jq -r '.[0].installed[0].version')"
-        remote="HEAD-$(git ls-remote https://github.com/koekeishiya/yabai.git HEAD | awk '{print substr($1,1,7)}')"
+# set codesigning certificate name here (default: yabai-cert)
+YABAI_CERT=
 
-        if [ ${?} -ne 0 ]; then
-                terminal-notifier -title "$(yabai --version)" -message "Failed to check for updates"
-        elif [[ "${installed}" == "${remote}" ]]; then
-                terminal-notifier -title "$(yabai --version)" -message "Configuration loaded"
-        else
-                terminal-notifier -title "$(yabai --version)" -message "There is an update available for yabai"
-        fi
+function main() {
+    if check_for_updates; then
+        install_updates ${YABAI_CERT}
+    else
+        osascript <<- EOM
+            display notification "Configuration loaded." ¬
+                with title "$(yabai --version)"
+        EOM
+    fi
 }
 
-check_for_updates &
+# Please do not touch the code below unless you absolutely know what you are
+# doing. It's the result of multiple long evenings trying to get this to work
+# and relies on terrible hacks to work around limitations of launchd.
+# For questions please reach out to @dominiklohmann via GitHub.
+
+function check_for_updates() {
+    set -o pipefail
+
+    installed="$(brew info koekeishiya/formulae/yabai | grep 'HEAD-' \
+        | awk '{print substr($1,length($1)-6)}')"
+    remote="$(git ls-remote --head 'https://github.com/koekeishiya/yabai.git' \
+        | awk '{print substr($1,1,7)}')"
+
+    [ ${?} -eq 0 ] && [[ "${installed}" != "${remote}" ]]
+}
+
+function install_updates() {
+    script=$(mktemp)
+
+    cat > ${script} <<- EOF
+        #! /usr/bin/env sh
+
+        clear
+        printf "\e[1mUpdating yabai...\e[0m\n"
+        printf "Authenticate to continue, Ctrl+C to cancel.\n\n"
+
+        if sudo -v; then
+            brew services stop koekeishiya/formulae/yabai
+            brew reinstall koekeishiya/formulae/yabai
+            codesign -fs "${1:-yabai-cert}" "$(brew --prefix yabai)/bin/yabai"
+            sudo yabai --uninstall-sa
+            sudo yabai --install-sa
+            brew services start koekeishiya/formulae/yabai
+            killall Dock
+            sleep 1
+        fi
+
+        ps -eo pid,comm | grep -v grep | grep -i Terminal | tail -1 \
+            | awk '{print $1}' | xargs kill
+    EOF
+
+
+    chmod +x ${script}
+    open -FWnb com.apple.Terminal ${script}
+    rm -f ${script}
+}
+
+main &
 ```
