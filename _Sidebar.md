@@ -14,7 +14,7 @@
 - [Disable System Integrity Protection](https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection)
 - [Install: Release version](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release))
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#updating-to-the-latest-release)
-- [Install: Development version](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD))
+- [Install: Dev version](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD))
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#updating-to-latest-head)
   - [Configuring automatic updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#auto-updating-from-head)
 
