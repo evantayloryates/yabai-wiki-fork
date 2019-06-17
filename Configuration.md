@@ -4,7 +4,7 @@ This wiki page aims to explain every configuration option in detail.
 
 ### Configuration file
 
-The per–user yabai configuration file must be named `.yabairc`, be in your home–directory and must be executable. It's just a shell script that's ran before yabai reads its configuration options.
+The per–user yabai configuration file must be named `.yabairc`, must be in your home–directory and must be executable. It's just a shell script that's ran before yabai reads its configuration options.
 
 ```sh
 # create empty configuration file and make it executable
