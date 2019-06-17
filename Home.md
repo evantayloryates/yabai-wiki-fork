@@ -16,10 +16,10 @@ Integration with [&rightarrow;&nbsp;skhd][gh-skhd] allows you to become the macO
 
 yabai can be installed via Homebrew from a custom tap. It does, however, require you to disable System Integrity Protection ("rootless"), because it controls windows by acting through Dock.app&thinsp;—&thinsp;which is the sole owner of the main connection to the window server.
 
-- Disable System Integrity Protection
-- Install yabai and configure macOS to allow it to run
-- Configure yabai to your liking
-- Optional: Integrate yabai with other software like [&rightarrow;&nbsp;skhd][gh-skhd] for keyboard shortcuts or [&rightarrow;&nbsp;Übersicht][gh-uebersicht] for desktop widgets
+1. Disable System Integrity Protection
+2. Install yabai and configure macOS to allow it to run
+3. Configure yabai to your liking
+4. Optional: Integrate yabai with other software like [&rightarrow;&nbsp;skhd][gh-skhd] for keyboard shortcuts or [&rightarrow;&nbsp;Übersicht][gh-uebersicht] for desktop widgets
 
 You can find detailed instructions on every step of the quickstart guide in this wiki. The sidebar to the right (bottom for mobile devices) has a sorted list of pages with links to individual chapters. 
 
