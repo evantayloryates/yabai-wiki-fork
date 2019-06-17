@@ -16,7 +16,7 @@
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#updating-to-the-latest-release)
 - [Install: Dev version](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD))
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#updating-to-latest-head)
-  - [Configuring automatic updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#auto-updating-from-head)
+  - [Configure auto–updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#auto-updating-from-head)
 
 </details>
 
