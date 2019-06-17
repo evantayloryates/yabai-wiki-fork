@@ -2,6 +2,16 @@ A short and concise overview of options available with your current installation
 
 This wiki page aims to explain every configuration option in detail. 
 
+### Configuration file
+
+The per–user yabai configuration file must be named `.yabairc`, be in your home–directory and must be executable. It's just a shell script that's ran before yabai reads its configuration options.
+
+```sh
+# create empty configuration file and make it executable
+touch ~/.yabairc
+chmod +x ~/.yabairc
+```
+
 ### Tiling options
 
 #### Layout
