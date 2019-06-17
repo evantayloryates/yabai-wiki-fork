@@ -2,8 +2,8 @@
 <p align="center">Tiling window management for the Mac.</p>
 <p align="center">
     <img src="https://badgen.net/github/release/koekeishiya/yabai?label=Release&color=black" alt="latest">
-    <img src="https://badgen.net/badge/Platform/macOS/black" alt="platform">
-    <img src="https://badgen.net/github/license/koekeishiya/yabai?color=black" alt="license">
+    <img src="https://badgen.net/badge/Platform/macOS?color=black" alt="platform">
+    <img src="https://badgen.net/badge/License/MIT?color=black" alt="license">
 </p>
 
 ### What is yabai?
