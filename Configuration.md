@@ -42,22 +42,20 @@ yabai -m config window_gap     20
 yabai -m config --space 2 window_gap 0
 ```
 
-#### Split ratio
+#### Split ratios
 
-The split ratio defines how much space each window occupies after a new split is created. A value of 0.5 means that both old and new window occupy the same space; a value of 0.2 means that the old window occupies 20% of the available space and the new window occupies 80% of the available space. New windows are inserted at the right or bottom side. The ratio needs to be between 0 and 1.
+Auto balance makes it so all windows always occupy the same space, independent of how deeply nested they are in the window tree. When a new window is inserted or a window is removed, the split ratios will be automatically adjusted.
+
+```sh
+# on or off (default: off)
+yabai -m config auto_balance off
+```
+
+If auto balance is disabled, the split ratio defines how much space each window occupies after a new split is created. A value of 0.5 means that both old and new window occupy the same space; a value of 0.2 means that the old window occupies 20% of the available space and the new window occupies 80% of the available space. New windows are inserted at the right or bottom side. The ratio needs to be between 0 and 1.
 
 ```sh
 # Floating point value between 0 and 1 (default: 0.5)
 yabai -m config split_ratio 0.5
-```
-
-#### Auto balance
-
-Auto balance overrides your split ratio configuration and makes it so all windows always occupy the same space, independent of how deeply nested they are in the window tree. When a new window is inserted or a window is removed, the split ratios will be automatically adjusted.
-
-```sh
-# on or off (default: off)
-yabai -m config split_ratio off
 ```
 
 ### Mouse support
