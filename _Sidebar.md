@@ -1,3 +1,5 @@
+<p align="center"><h3>Documentation</h3></p>
+
 <details open>
 <summary><b>General</b></summary>
 
