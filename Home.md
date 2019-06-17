@@ -1,3 +1,11 @@
+<h1 align="center">yabai</h1>
+<p align="center">Tiling window management for the Mac.</p>
+<p align="center">
+    <img src="https://badgen.net/github/release/koekeishiya/yabai?label=Release&color=black" alt="latest">
+    <img src="https://badgen.net/badge/Platform/macOS/black" alt="platform">
+    <img src="https://badgen.net/github/license/koekeishiya/yabai?color=black" alt="license">
+</p>
+
 ### What is yabai?
 
 yabai is a tiling window manager for macOS High Sierra 10.13.6 and macOS Mojave 10.14.5. It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
