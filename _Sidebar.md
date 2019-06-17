@@ -3,7 +3,7 @@
 <details open>
 <summary><b>General</b></summary>
 
-- [What is yabai?](https://github.com/koekeishiya/yabai/wiki#what-is-yabai)
+- [What is yabai?](https://github.com/koekeishiya/yabai/wiki#yabai)
 - [Quickstart guide](https://github.com/koekeishiya/yabai/wiki#quickstart-guide)
 
 </details>
