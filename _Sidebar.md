@@ -23,6 +23,7 @@
 <details open>
 <summary><b>Configuration</b></summary>
 
+- [Configuration file](https://github.com/koekeishiya/yabai/wiki/Configuration#configuration-file)
 - [Tiling options](https://github.com/koekeishiya/yabai/wiki/Configuration#tiling-options)
   - [Layout](https://github.com/koekeishiya/yabai/wiki/Configuration#layout)
   - [Padding and gaps](https://github.com/koekeishiya/yabai/wiki/Configuration#padding-and-gaps)
