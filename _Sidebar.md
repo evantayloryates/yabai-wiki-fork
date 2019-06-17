@@ -27,7 +27,7 @@
 - [Tiling options](https://github.com/koekeishiya/yabai/wiki/Configuration#tiling-options)
   - [Layout](https://github.com/koekeishiya/yabai/wiki/Configuration#layout)
   - [Padding and gaps](https://github.com/koekeishiya/yabai/wiki/Configuration#padding-and-gaps)
-  - [Split ratio](https://github.com/koekeishiya/yabai/wiki/Configuration#split-ratios)
+  - [Split ratios](https://github.com/koekeishiya/yabai/wiki/Configuration#split-ratios)
 - [Mouse support](https://github.com/koekeishiya/yabai/wiki/Configuration#mouse-support)
 - [Window modifications](https://github.com/koekeishiya/yabai/wiki/Configuration#window-modifications)
 - [Status bar](https://github.com/koekeishiya/yabai/wiki/Configuration#status-bar)
