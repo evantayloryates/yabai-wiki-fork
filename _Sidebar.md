@@ -1,4 +1,4 @@
-<p align="center"><h3>Documentation</h3></p>
+<div align="center"><h3>Documentation</h3></div>
 
 <details open>
 <summary><b>General</b></summary>
