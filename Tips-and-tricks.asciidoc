@@ -17,3 +17,12 @@ The below script loads all executable files (`chmod +x`) in `~/.config/yabai/` a
 # find all executable files in ~/.config/yabai and execute them
 find "${HOME}/.config/yabai" -type f -perm +111 -exec {} \;
 ```
+
+=== Fix folders opened from desktop not tiling
+
+When opening a folder on the desktop there's an animation that conflicts with yabai trying to tile the window. This animation can be disabled:
+
+```sh
+defaults write com.apple.finder DisableAllAnimations -bool true
+killall Finder # or logout and login
+```
