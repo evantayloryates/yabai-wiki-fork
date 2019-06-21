@@ -122,4 +122,10 @@ yabai -m config insert_window_border_color 0xffd75f5f
 
 ### Status bar
 
+yabai ships with support for a simple status bar. Please note that feature requests for the status bar are unlikely to be fulfilled as it is supposed to be simple, and third-party tools like [&rightarrow;&nbsp;Übersicht][gh-uebersicht] should be used for more complex status bars.
+
+The [&rightarrow;&nbsp;example configuration][example-config] comes with an example configuration for the status bar, which should be fairly self-explanatory.
+
 [docs-config]: https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc#config
+[gh-uebersicht]: https://github.com/felixhageloh/uebersicht
+[example-config]: https://github.com/koekeishiya/yabai/blob/master/examples/yabairc
