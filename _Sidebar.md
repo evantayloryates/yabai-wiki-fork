@@ -42,4 +42,7 @@
 <details open>
 <summary><b>Tips and Tricks</b></summary>
 
+- [Quickly restart the yabai launch agent](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#quickly-restart-the-yabai-launch-agent)
+- [Split yabai configuration across multiple files](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#split-yabai-configuration-across-multiple-files)
+
 </details>
