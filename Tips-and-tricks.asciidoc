@@ -25,4 +25,7 @@ When opening a folder on the desktop there's an animation that conflicts with ya
 ```sh
 defaults write com.apple.finder DisableAllAnimations -bool true
 killall Finder # or logout and login
+
+# to reset system defaults, delete the key instead
+# defaults delete com.apple.finder DisableAllAnimations
 ```
