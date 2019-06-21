@@ -4,6 +4,16 @@ System Integrity Protection ("rootless") is a security feature of macOS first in
 
 System Integrity Protection protects some files and directories from being modified&thinsp;—&thinsp;even from the root user. yabai needs System Integrity Protection to be disabled so that it can inject a scripting addition into Dock.app, which owns the sole connection to the macOS window server. Many features of yabai require this scripting addition to be running such that yabai can modify windows, spaces and displays in a way that otherwise only Dock.app could.
 
+The following features of yabai require System Integrity Protection to be disabled:
+
+* focus/create/destroy space without animation
+* move space (and its windows) left, right or to another display
+* focus windows instantly
+* remove window shadows
+* enable window transparency
+* control window layers (make windows appear topmost)
+* sticky windows (make windows appear on all spaces)
+
 ### How do I disable System Integrity Protection?
 
 1. Turn off your device
