@@ -75,7 +75,7 @@ yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 ```
 
-With focus follows mouse, you can also focus windows without having to click on them. This can be set to either autofocus (window gets focused, but not raised) or autoraise (window gets raised as if it was clicked on).
+With focus follows mouse, you can also focus windows without having to click on them. This can be set to either autofocus (window gets focused, but not raised) or autoraise (window gets raised as if it was clicked on). Focus follows mouse is disabled while holding the mouse modifier key so that you can access the menu bar easily.
 
 ```sh
 # set focus follows mouse mode (default: off, options: off, autoraise, autofocus)
