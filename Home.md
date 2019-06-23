@@ -23,5 +23,25 @@ yabai can be installed via Homebrew from a custom tap. It does, however, require
 
 You can find detailed instructions on every step of the quickstart guide in this wiki. The sidebar to the right (bottom for mobile devices) has a sorted list of pages with links to individual chapters. 
 
+### Comparison with other window managers
+
+**NOTE:** This feature comparison table is far from complete. Please contribute. It's mostly a placeholder in its current state.
+
+<!-- 
+Useful HTML entities for this table:
+- Check mark symbol: &#10003;
+- Ballot X symbol:   &#10007;
+--->
+
+||yabai|[&rightarrow;&nbsp;chunkwm][gh-chunkwm]|[&rightarrow;&nbsp;Amethyst][gh-amethyst]|
+|-:|:-:|:-:|:-:|
+|Supported macOS versions|10.13–10.15|10.13–10.14|10.12–10.15|
+|May work with SIP enabled|&#10007;|&#10003;*|&#10003;|
+|Support for multiple displays|&#10003;|&#10003;*|&#10003;*|
+
+*\* partially*
+
 [gh-skhd]: https://github.com/koekeishiya/skhd
 [gh-uebersicht]: https://github.com/felixhageloh/uebersicht
+[gh-chunkwm]: https://github.com/koekeishiya/chunkwm
+[gh-amethyst]: https://github.com/ianyh/Amethyst
