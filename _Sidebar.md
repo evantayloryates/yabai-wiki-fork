@@ -5,6 +5,7 @@
 
 - [What is yabai?](https://github.com/koekeishiya/yabai/wiki#yabai)
 - [Quickstart guide](https://github.com/koekeishiya/yabai/wiki#quickstart-guide)
+- [Should you upgrade from chunkwm?](https://github.com/koekeishiya/yabai/wiki#should-you-upgrade-from-chunkwm)
 - [Comparison with other window managers](https://github.com/koekeishiya/yabai/wiki#comparison-with-other-window-managers)
 
 </details>
