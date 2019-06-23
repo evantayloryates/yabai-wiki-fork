@@ -35,11 +35,21 @@ Useful HTML entities for this table:
 
 ||yabai|[&rightarrow;&nbsp;chunkwm][gh-chunkwm]|[&rightarrow;&nbsp;Amethyst][gh-amethyst]|
 |-:|:-:|:-:|:-:|
+|**General**|
 |Supported macOS versions|10.13–10.15|10.13–10.14|10.12–10.15|
-|May work with SIP enabled|&#10007;|&#10003;*|&#10003;|
-|Support for multiple displays|&#10003;|&#10003;*|&#10003;*|
+|Works with SIP enabled|&#10007;|&#10003;*|&#10003;|
+|Integrate with 3rd party tools|Signals, Rules and Commands|Rules and Commands**|&#10007;|
+|**Windows**|
+|Modify window properties|&#10003;|&#10003;|&#10007;|
+|**Spaces**|
+|Create and destroy spaces|&#10003;|&#10003;|&#10007;|
+|Move spaces|&#10003;|&#10007;|&#10007;|
+|**Displays**|
+|Support multiple displays|&#10003;|&#10003;*|&#10003;*|
 
-*\* partially*
+
+\* partially  
+\*\* `chunkwm` commands have meaningless return values
 
 [gh-skhd]: https://github.com/koekeishiya/skhd
 [gh-uebersicht]: https://github.com/felixhageloh/uebersicht
