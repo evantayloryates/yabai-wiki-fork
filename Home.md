@@ -39,6 +39,7 @@ Useful HTML entities for this table:
 |Supported macOS versions|10.13–10.15|10.13–10.14|10.12–10.15|
 |Works with SIP enabled|&#10007;|&#10003;*|&#10003;|
 |Integrate with 3rd party tools|Signals, Rules and Commands|Rules and Commands**|&#10007;|
+|Plugin API|&#10007;|&#10003;|&#10007;|
 |**Windows**|
 |Modify window properties|&#10003;|&#10003;|&#10007;|
 |**Spaces**|
