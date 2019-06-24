@@ -18,7 +18,6 @@
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#updating-to-the-latest-release)
 - [Install: Dev version](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD))
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#updating-to-latest-head)
-  - [Configure auto–updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#auto-updating-from-head)
 
 </details>
 
@@ -63,5 +62,6 @@
 - [Quickly restart the yabai launch agent](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#quickly-restart-the-yabai-launch-agent)
 - [Split yabai configuration across multiple files](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#split-yabai-configuration-across-multiple-files)
 - [Fix folders opened from Desktop not tiling](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#fix-folders-opened-from-desktop-not-tiling)
+- [Auto updating from HEAD via brew](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#auto-updating-from-head-via-brew)
 
 </details>
