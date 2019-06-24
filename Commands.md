@@ -232,7 +232,7 @@ Whether a window is split vertically or horizontally with its parent node can be
 yabai -m window --toggle split
 ```
 
-#### Window properties
+#### Toggle window properties
 
 You can also toggle some other window properties.
 
