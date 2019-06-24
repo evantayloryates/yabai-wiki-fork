@@ -61,6 +61,7 @@
 
 - [Quickly restart the yabai launch agent](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#quickly-restart-the-yabai-launch-agent)
 - [Split yabai configuration across multiple files](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#split-yabai-configuration-across-multiple-files)
+- [Fix spaces reordering automatically](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#fix-spaces-reordering-automatically)
 - [Fix folders opened from Desktop not tiling](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#fix-folders-opened-from-desktop-not-tiling)
 - [Auto updating from HEAD via brew](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#auto-updating-from-head-via-brew)
 
