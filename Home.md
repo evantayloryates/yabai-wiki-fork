@@ -1,10 +1,10 @@
 <h1 align="center">yabai</h1>
 <p align="center">Tiling window management for the Mac.</p>
 <p align="center">
-    <a href="https://github.com/koekeishiya/yabai/blob/master/CHANGELOG.md"><img src="https://img.shields.io/badge/view-changelog-blue.svg" alt="changelog"></a>
-    <a href="https://github.com/koekeishiya/yabai/releases"><img src="https://img.shields.io/github/commits-since/koekeishiya/yabai/latest.svg" alt="version"></a>
     <img src="https://img.shields.io/badge/Platform-macOS-blue.svg?style=flat" alt="platform">
     <a href="https://github.com/koekeishiya/yabai/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/koekeishiya/yabai.svg?color=blue" alt="license"></a>
+    <a href="https://github.com/koekeishiya/yabai/blob/master/CHANGELOG.md"><img src="https://img.shields.io/badge/view-changelog-blue.svg" alt="changelog"></a>
+    <a href="https://github.com/koekeishiya/yabai/releases"><img src="https://img.shields.io/github/commits-since/koekeishiya/yabai/latest.svg" alt="version"></a>
 </p>
 
 ### What is yabai?
