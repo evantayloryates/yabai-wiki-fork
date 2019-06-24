@@ -269,7 +269,7 @@ yabai -m signal --add event=space_changed \
 
 ### Querying information
 
-yabai can also query information about displays, spaces and windows. There are a total of 12 queries available, which can be enhanced easily using `jq` to filter the JSON formatted output.
+yabai can also query information about displays, spaces and windows. There are a total of 12 queries available, which can be enhanced easily using [&rightarrow;&nbsp;jq][gh-jq] to filter the JSON formatted output.
 
 ||`yabai -m query --displays`|`yabai -m query --spaces`|`yabai -m query --windows`|
 |-:|-|-|-|
@@ -289,3 +289,4 @@ yabai -m query --windows --space 2 | jq '.[].id'
 [example-skhdrc]: https://github.com/koekeishiya/yabai/blob/master/examples/skhdrc
 [docs-rule]: https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc#rule
 [docs-signal]: https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc#signal
+[gh-jq]: https://github.com/stedolan/jq
