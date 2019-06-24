@@ -41,6 +41,9 @@ The below snippet makes yabai check for updates whenever it starts and automatic
 
 Note that this is only for when you run installed via `brew install yabai --HEAD`.
 
+<details>
+<summary>Click to expand snippet</summary>
+
 ```sh
 # set codesigning certificate name here (default: yabai-cert)
 YABAI_CERT=
@@ -106,3 +109,5 @@ EOF
 
 main &
 ```
+
+</details>
