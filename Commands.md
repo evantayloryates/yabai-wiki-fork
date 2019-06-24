@@ -162,7 +162,7 @@ yabai -m window --swap last
 yabai -m window --swap prev
 
 # swap with window under cursor
-yabai -m window --swap cursor
+yabai -m window --swap mouse
 ```
 
 Tiled windows can also be re-inserted ("warped") at other windows. 
@@ -179,7 +179,7 @@ yabai -m window --warp last
 yabai -m window --warp prev
 
 # warp at window under cursor
-yabai -m window --warp cursor
+yabai -m window --warp mouse
 ```
 
 Floating windows can be moved and resized to absolute coordinates and sizes.
