@@ -26,6 +26,16 @@ yabai -m config layout bsp
 yabai -m config --space 2 layout float
 ```
 
+By default, new windows become the right or bottom split when tiled, which can be changed to left or top.
+
+```
+# New window spawns to the left if vertical split, or top if horizontal split
+yabai -m config window_placement first_child
+
+# New window spawns to the right if vertical split, or bottom if horizontal split
+yabai -m config window_placement second_child
+```
+
 #### Padding and gaps
 
 When tiling windows, yabai can maintain gaps between windows and padding towards menu bar, dock and screen edges. This setting can be defined on a per–space basis.
