@@ -1,4 +1,4 @@
-=== Quickly restart the yabai launch agent
+### Quickly restart the yabai launch agent
 
 When running through `brew services`, restarting yabai using `brew services restart yabai` can take a few seconds. You can achieve (almost) the same effect by running this command instead:
 
@@ -9,7 +9,7 @@ launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 # ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 ```
 
-=== Split yabai configuration across multiple files
+### Split yabai configuration across multiple files
 
 The below script loads all executable files (`chmod +x`) in `~/.config/yabai/` and executes them. Why? Because then parts of your config can be reloaded individually from signals or external triggers.
 
@@ -18,7 +18,7 @@ The below script loads all executable files (`chmod +x`) in `~/.config/yabai/` a
 find "${HOME}/.config/yabai" -type f -perm +111 -exec {} \;
 ```
 
-=== Fix folders opened from desktop not tiling
+### Fix folders opened from desktop not tiling
 
 When opening a folder on the desktop there's an animation that conflicts with yabai trying to tile the window. This animation can be disabled:
 
@@ -29,6 +29,11 @@ killall Finder # or logout and login
 # to reset system defaults, delete the key instead
 # defaults delete com.apple.finder DisableAllAnimations
 ```
+
+### Fix spaces reordering automatically
+
+In System Preferences, navigate to Mission Control and uncheck the option "Automatically rearrange Spaces based on most recent use". 
+
 
 ### Auto updating from HEAD via brew
 
