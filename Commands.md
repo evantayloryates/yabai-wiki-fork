@@ -141,6 +141,9 @@ yabai -m window --focus last
 
 # focus previous or next window in window tree (options: prev, next)
 yabai -m window --focus prev
+
+# focus window under cursor
+yabai -m window --focus mouse
 ```
 
 #### Move window
@@ -157,6 +160,9 @@ yabai -m window --swap last
 
 # swap with previous or next window in window tree (options: prev, next)
 yabai -m window --swap prev
+
+# swap with window under cursor
+yabai -m window --swap cursor
 ```
 
 Tiled windows can also be re-inserted ("warped") at other windows. 
@@ -171,6 +177,9 @@ yabai -m window --warp last
 
 # warp at previous or next window in window tree (options: prev, next)
 yabai -m window --warp prev
+
+# warp at window under cursor
+yabai -m window --warp cursor
 ```
 
 Floating windows can be moved and resized to absolute coordinates and sizes.
