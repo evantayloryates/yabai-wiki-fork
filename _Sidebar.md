@@ -39,6 +39,22 @@
 <details open>
 <summary><b>Commands</b></summary>
 
+- [Message passing interface](https://github.com/koekeishiya/yabai/wiki/Commands#message-passing-interface)
+- [Display commands](https://github.com/koekeishiya/yabai/wiki/Commands#display-commands)
+  - [Focus display](https://github.com/koekeishiya/yabai/wiki/Commands#focus-display)
+- [Space commands](https://github.com/koekeishiya/yabai/wiki/Commands#space-commands)
+  - [Focus space](https://github.com/koekeishiya/yabai/wiki/Commands#focus-space)
+  - [Create and destroy spaces](https://github.com/koekeishiya/yabai/wiki/Commands#create-and-destroy-spaces)
+  - [Move spaces](https://github.com/koekeishiya/yabai/wiki/Commands#move-spaces)
+  - [Modify window tree](https://github.com/koekeishiya/yabai/wiki/Commands#modify-window-tree)
+  - [Modify space layout](https://github.com/koekeishiya/yabai/wiki/Commands#modify-space-layout)
+  - [Modify padding and gaps](https://github.com/koekeishiya/yabai/wiki/Commands#modify-padding-and-gaps)
+- [Window commands](https://github.com/koekeishiya/yabai/wiki/Commands#window-commands)
+  - [Focus window](https://github.com/koekeishiya/yabai/wiki/Commands#focus-window)
+  - [Move window](https://github.com/koekeishiya/yabai/wiki/Commands#move-window)
+  - [Toggle window properties](https://github.com/koekeishiya/yabai/wiki/Commands#toggle-window-properties)
+- [Automation with rules and signals](https://github.com/koekeishiya/yabai/wiki/Commands#automation-with-rules-and-signals)
+- [Querying information](https://github.com/koekeishiya/yabai/wiki/Commands#querying-information)
 </details>
 
 <details open>
