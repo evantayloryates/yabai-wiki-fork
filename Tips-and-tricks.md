@@ -39,7 +39,7 @@ In System Preferences, navigate to Mission Control and uncheck the option "Autom
 
 The below snippet makes yabai check for updates whenever it starts and automatically installs them for you, only requiring you to enter your password. Just put it at the end of your yabai configuration file and forget about it.
 
-Note that this is only for when you run installed via `brew install yabai --HEAD`.
+Note that this is only installations from HEAD (`brew install yabai --HEAD`).
 
 <details>
 <summary>Click to expand snippet</summary>
