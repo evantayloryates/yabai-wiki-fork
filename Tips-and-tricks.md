@@ -49,7 +49,7 @@ Note that this is only installations from HEAD (`brew install yabai --HEAD`).
 This downloads an up-to-date version of the yabai autoupdate script hosted by [@dominiklohmann](https://github.com/dominiklohmann) and executes it whenever yabai starts.
 
 ```sh
-YABAI_CERT=yabai-cert sh -c "$(curl -sSL "https://gist.githubusercontent.com/dominiklohmann/637ecc399fb2a49252427a84bc2cd3ae/raw/42dc46882a263fb77bd1205281d3ec55c187ce1a/yabai.autoupdate.sh")" &
+YABAI_CERT=yabai-cert sh -c "$(curl -sSL "https://git.io/yabai-autoupdate")" &
 ```
 
 #### Method 2
