@@ -69,7 +69,7 @@ function check_for_updates() {
 
     installed="$(brew info koekeishiya/formulae/yabai | grep 'HEAD-' \
         | awk '{print substr($1,length($1)-6)}')"
-    remote="$(git ls-remote --head 'https://github.com/koekeishiya/yabai.git' \
+    remote="$(git ls-remote 'https://github.com/koekeishiya/yabai.git' HEAD \
         | awk '{print substr($1,1,7)}')"
 
     [ ${?} -eq 0 ] && [[ "${installed}" != "${remote}" ]]
