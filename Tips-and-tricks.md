@@ -44,6 +44,18 @@ Note that this is only installations from HEAD (`brew install yabai --HEAD`).
 <details>
 <summary>Click to expand snippet</summary>
 
+### Method 1
+
+This downloads an up-to-date version of the yabai autoupdate script hosted by [@dominiklohmann](https://github.com/dominiklohmann) and executes it whenever yabai starts.
+
+```sh
+YABAI_CERT=yabai-cert curl -s "https://gist.githubusercontent.com/dominiklohmann/637ecc399fb2a49252427a84bc2cd3ae/raw/42dc46882a263fb77bd1205281d3ec55c187ce1a/yabai.autoupdate.sh" | sh &
+```
+
+### Method 2
+
+This does the same as above, except the update snippet doesn't update itself. Check back for changes. Last update: 2019-07-04.
+
 ```sh
 # set codesigning certificate name here (default: yabai-cert)
 YABAI_CERT=
