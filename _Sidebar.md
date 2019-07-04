@@ -64,5 +64,6 @@
 - [Fix spaces reordering automatically](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#fix-spaces-reordering-automatically)
 - [Fix folders opened from Desktop not tiling](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#fix-folders-opened-from-desktop-not-tiling)
 - [Auto updating from HEAD via brew](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#auto-updating-from-head-via-brew)
+- [Tiling Emacs](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#tiling-emacs)
 
 </details>
