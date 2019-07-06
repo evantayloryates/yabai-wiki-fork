@@ -20,7 +20,7 @@ The arrangement indices for displays can be seen in the Displays > Arrangement p
 
 ```sh
 # Focus display focused before the current one (so you can alternate)
-yabai -m config display --focus last
+yabai -m config display --focus recent
 
 # Focus previous display by arrangement index
 yabai -m config display --focus prev
@@ -40,7 +40,7 @@ The mission-control indices for spaces can be seen when mission control is activ
 
 ```sh
 # Focus space focused before the current one (so you can alternate)
-yabai -m config space --focus last
+yabai -m config space --focus recent
 
 # Focus previous space by mission-control index
 yabai -m config space --focus prev
@@ -137,10 +137,13 @@ If you want to operate on an unfocused, visible window, replace `yabai -m window
 yabai -m window --focus east
 
 # focus window that was previously focused
-yabai -m window --focus last
+yabai -m window --focus recent
 
 # focus previous or next window in window tree (options: prev, next)
 yabai -m window --focus prev
+
+# focus first or last window in window tree (options: first, last)
+yabai -m window --focus first
 
 # focus window under cursor
 yabai -m window --focus mouse
@@ -156,10 +159,13 @@ Tiled window can be swapped with other windows.
 yabai -m window --swap north
 
 # swap with previously focused window
-yabai -m window --swap last
+yabai -m window --swap recent
 
 # swap with previous or next window in window tree (options: prev, next)
 yabai -m window --swap prev
+
+# swap with first or last window in window tree (options: first, last)
+yabai -m window --swap first
 
 # swap with window under cursor
 yabai -m window --swap mouse
@@ -173,10 +179,13 @@ Tiled windows can also be re-inserted ("warped") at other windows.
 yabai -m window --warp north
 
 # warp at previously focused window
-yabai -m window --warp last
+yabai -m window --warp recent
 
 # warp at previous or next window in window tree (options: prev, next)
 yabai -m window --warp prev
+
+# warp at first or last window in window tree (options: first, last)
+yabai -m window --warp first
 
 # warp at window under cursor
 yabai -m window --warp mouse
@@ -222,7 +231,7 @@ Move window to another space or display. As with other commands this works using
 yabai -m window --space prev
 
 # move window to display focused before the current one
-yabai -m window --display last
+yabai -m window --display recent
 
 # move window to space 2
 yabai -m window --space 2
