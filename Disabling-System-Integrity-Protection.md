@@ -8,7 +8,6 @@ The following features of yabai require System Integrity Protection to be disabl
 
 * focus/create/destroy space without animation
 * move space (and its windows) left, right or to another display
-* focus windows instantly
 * remove window shadows
 * enable window transparency
 * control window layers (make windows appear topmost)
