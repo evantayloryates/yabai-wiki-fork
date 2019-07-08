@@ -40,7 +40,7 @@ To upgrade yabai to the latest version from HEAD, simply reinstall it with Homeb
 
 ```sh
 # set codesigning certificate name here (default: yabai-cert)
-export YABAI_CERT=yabai-cert
+export YABAI_CERT=
 
 # stop yabai
 brew services stop koekeishiya/formulae/yabai
