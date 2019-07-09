@@ -13,6 +13,16 @@ yabai is a tiling window manager for macOS High Sierra 10.13.6 and macOS Mojave 
 
 Integration with [&rightarrow;&nbsp;skhd][gh-skhd] allows you to become the macOS power user you have always wanted to be. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
 
+### Installation requirements
+
+|Requirement|Note|
+|-:|:-|
+|Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, macOS&nbsp;Mojave&nbsp;10.14.4+ and macOS&nbsp;Catalina&nbsp;Dev&nbsp;Beta&nbsp;2+ are supported.|
+|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be disabled for **yabai** to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections.|
+|Accessibility&nbsp;API|**yabai** must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
+|Code&nbsp;Signing|When building from source (or installing from HEAD), it is recommended to codesign the binary  so it retains its accessibility and automation privileges when updated or rebuilt.|
+|Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Displays have separate Spaces" must be enabled. Additionally it is recommended to disable "Automatically rearrange Spaces based on most recent use".|
+
 ### Quickstart guide
 
 yabai can be installed via Homebrew from a custom tap. It does, however, require you to disable System Integrity Protection ("rootless"), because it controls windows by acting through Dock.app&thinsp;—&thinsp;which is the sole owner of the main connection to the window server.
