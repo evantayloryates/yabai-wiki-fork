@@ -103,13 +103,6 @@ function check_for_updates() {
 }
 
 function install_updates() {
-	script="$(mktemp)"
-	cat > ${script} <<- EOF
-		#! /usr/bin/env sh
-		sudo yabai --uninstall-sa
-		sudo yabai --install-sa
-	EOF
-	chmod +x "${script}"
 
 	echo "[yabai-update] reinstalling yabai"
 	brew reinstall yabai > /dev/null 2>&1
@@ -117,14 +110,29 @@ function install_updates() {
 	echo "[yabai-update] codesigning yabai"
 	codesign -fs "${1:-yabai-sign}" "$(brew --prefix yabai)/bin/yabai" > /dev/null
 
-	echo "[yabai-update] prompting to reinstall scripting addition"
-	osascript > /dev/null << EOM
-		display dialog "A new version of yabai was just installed and yabai will restart shortly.\n\nDo you want to reinstall the scripting addition (osascript will prompt for elevated privileges)?" with title "$(yabai --version)" with icon file "Macintosh HD:System:Library:CoreServices:Dock.app:Contents:Resources:Dock.icns" buttons {"Install", "Cancel"} default button 2
-		if button returned of result = "Install" then
-			do shell script "${script}" with administrator privileges
-		end if
-EOM
-	rm -f "${script}"
+	echo "[yabai-update] checking installed scripting addition"
+	if yabai --check-sa; then
+		osascript > /dev/null <<- EOM
+			display dialog "A new version of yabai was just installed and yabai will restart shortly." with title "$(yabai --version)" buttons {"Okay"} default button 1
+		EOM
+	else
+		echo "[yabai-update] prompting to reinstall scripting addition"
+		script="$(mktemp)"
+		cat > ${script} <<- EOF
+			#! /usr/bin/env sh
+			sudo yabai --uninstall-sa
+			sudo yabai --install-sa
+			pkill -x Dock
+		EOF
+		chmod +x "${script}"
+		osascript > /dev/null <<- EOM
+			display dialog "A new version of yabai was just installed and yabai will restart shortly.\n\nDo you want to reinstall the scripting addition (osascript will prompt for elevated privileges)?" with title "$(yabai --version)" buttons {"Install", "Cancel"} default button 2
+			if button returned of result = "Install" then
+				do shell script "${script}" with administrator privileges
+			end if
+		EOM
+		rm -f "${script}"
+	fi
 	
 	echo "[yabai-update] restarting yabai"
 	launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
