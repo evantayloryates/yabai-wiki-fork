@@ -151,7 +151,7 @@ Emacs is not a well-behaved citizen of macOS. Try using [&rightarrow;&nbsp;emacs
 (menu-bar-mode t)
 ```
 
-### Updating battery icon in status bar based on battery percentage
+### Updating battery icon in status bar based on battery level
 
 The below snippet makes yabai update its status bar battery icon depending on your current battery level, refreshing every five minutes.
 
