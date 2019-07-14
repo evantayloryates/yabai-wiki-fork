@@ -66,5 +66,6 @@
 - [Fix folders opened from Desktop not tiling](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#fix-folders-opened-from-desktop-not-tiling)
 - [Auto updating from HEAD via brew](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#auto-updating-from-head-via-brew)
 - [Tiling Emacs](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#tiling-emacs)
+- [Updating battery icon in status bar based on battery level](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#updating-battery-icon-in-status-bar-based-on-battery-level)
 
 </details>
