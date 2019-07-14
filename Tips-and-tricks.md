@@ -153,28 +153,36 @@ Emacs is not a well-behaved citizen of macOS. Try using [&rightarrow;&nbsp;emacs
 
 ### Updating battery icon in status bar based on battery percentage
 
-Run the below script on a regular schedule (e.g. using `launchd` to run it every 5 minutes). The example script uses Font Awesome for its icons.
+The below snippet makes yabai update its status bar battery icon depending on your current battery level, refreshing every five minutes.
 
 <details>
 <summary>Click to expand snippet</summary>
 
 ```sh
-#! /usr/bin/env sh
+function update_battery_loop() {
+	while true; do
+		# Get the current battery percentage.
+		battery=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
 
-# Get the current battery percentage.
-battery=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
+		if [ $battery -gt 84 ]; then
+			yabai -m config status_bar_power_icon_strip battery-full plug
+		elif [ $battery -gt 60 ]; then
+			yabai -m config status_bar_power_icon_strip battery-three-quarters plug
+		elif [ $battery -gt 39 ]; then
+			yabai -m config status_bar_power_icon_strip battery-half plug
+		elif [ $battery -gt 14 ]; then
+			yabai -m config status_bar_power_icon_strip battery-quarter plug
+		else
+			yabai -m config status_bar_power_icon_strip battery-empty plug
+		fi
 
-if [ $battery -gt 84 ]; then
-    yabai -m config status_bar_power_icon_strip battery-full plug
-elif [ $battery -gt 60 ]; then
-    yabai -m config status_bar_power_icon_strip battery-three-quarters plug
-elif [ $battery -gt 39 ]; then
-    yabai -m config status_bar_power_icon_strip battery-half plug
-elif [ $battery -gt 14 ]; then
-    yabai -m config status_bar_power_icon_strip battery-quarter plug
-else
-    yabai -m config status_bar_power_icon_strip battery-empty plug
-fi
+		# wait 5 minutes
+		sleep $frequency
+	done
+}
+
+# run the function async
+update_battery_loop &
 ```
 
 </details>
