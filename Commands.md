@@ -20,16 +20,16 @@ The arrangement indices for displays can be seen in the Displays > Arrangement p
 
 ```sh
 # Focus display focused before the current one (so you can alternate)
-yabai -m config display --focus recent
+yabai -m display --focus recent
 
 # Focus previous display by arrangement index
-yabai -m config display --focus prev
+yabai -m display --focus prev
 
 # Focus next display by arrangement index
-yabai -m config display --focus next
+yabai -m display --focus next
 
 # Focus display with arrangement index 2
-yabai -m config display --focus 2
+yabai -m display --focus 2
 ```
 
 ### Space commands
@@ -40,26 +40,26 @@ The mission-control indices for spaces can be seen when mission control is activ
 
 ```sh
 # Focus space focused before the current one (so you can alternate)
-yabai -m config space --focus recent
+yabai -m space --focus recent
 
 # Focus previous space by mission-control index
-yabai -m config space --focus prev
+yabai -m space --focus prev
 
 # Focus next space by mission-control index
-yabai -m config space --focus next
+yabai -m space --focus next
 
 # Focus space with mission-control index 2
-yabai -m config space --focus 2
+yabai -m space --focus 2
 ```
 
 #### Create and destroy spaces
 
 ```sh
 # Create space on the active display
-yabai -m config space --create
+yabai -m space --create
 
 # Delete focused space and focus first space on display
-yabai -m config space --destroy
+yabai -m space --destroy
 ```
 
 #### Move spaces
