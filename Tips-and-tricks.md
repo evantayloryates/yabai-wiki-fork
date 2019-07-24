@@ -145,7 +145,9 @@ function install_updates() {
 
 ### Tiling Emacs
 
-Emacs is not a well-behaved citizen of macOS. Try using [&rightarrow;&nbsp;emacs-mac](https://bitbucket.org/mituharu/emacs-mac) from the Homebrew tap [&rightarrow;&nbsp;emacsmacport](https://github.com/railwaycat/homebrew-emacsmacport) and add the following line to your configuration file to get yabai to recognize Emacs.
+Emacs is not a well-behaved citizen of macOS. Try using [&rightarrow;&nbsp;emacs-mac](https://bitbucket.org/mituharu/emacs-mac) from the Homebrew tap [&rightarrow;&nbsp;emacsmacport](https://github.com/railwaycat/homebrew-emacsmacport).
+
+If Emacs is still not recognized by yabai, try enabling menu-bar-mode.
 
 ```emacs-lisp
 (menu-bar-mode t)
