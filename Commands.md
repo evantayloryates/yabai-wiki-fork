@@ -115,7 +115,7 @@ yabai -m space --padding rel:10:0:-5:-5
 yabai -m space --padding abs:20:20:20:20
 
 # toggle gap between windows on the current space
-yabai -m space --toggle gaps
+yabai -m space --toggle gap
 
 # add 10 to gap between windows (rel = relative)
 yabai -m space --gap rel:10
