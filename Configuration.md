@@ -138,6 +138,8 @@ yabai ships with support for a simple status bar. Please note that feature reque
 
 The [&rightarrow;&nbsp;example configuration][example-config] comes with an example configuration for the status bar, which should be fairly self-explanatory.
 
+The status bar is not intended to be used with the macOS menu bar visible. You can turn on autohiding of the macOS menubar so that it only shows up when you move your cursor to access it: System Preferences -> General -> Automatically hide and show the menu bar.
+
 [docs-config]: https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc#config
 [gh-uebersicht]: https://github.com/felixhageloh/uebersicht
 [example-config]: https://github.com/koekeishiya/yabai/blob/master/examples/yabairc
