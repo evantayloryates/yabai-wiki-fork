@@ -41,7 +41,7 @@ You can find detailed instructions on every step of the quickstart guide in this
 
 A commonly asked question is whether you should update from [&rightarrow;&nbsp;chunkwm][gh-chunkwm] to yabai right now. In general, the answer to this is yes. 
 
-There are, however, a few notable exceptions: If you either cannot disable System Integrity Protection or are heavily invested into the plugin API and absolutely cannot replace your plugins using the signals and rules provided by yabai.
+There is, however, one notable exception: If you are heavily invested into the plugin API and absolutely cannot replace your plugins using the signals and rules provided by yabai, you should continue to use chunkwm.
 
 Please note that chunkwm will not work on macOS 10.15 Catalina.
 
