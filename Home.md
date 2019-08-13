@@ -15,7 +15,7 @@ A flexible and easy-to-grok command line interface allows you to control and que
 
 ### Installation requirements
 
-Please read the below requirements and recommendations carefully. Make sure you fulfill all requirements before filing asking for help on the issue board.
+Please read the below requirements and recommendations carefully. Make sure you fulfill all requirements before filing an issue.
 
 |Requirement|Note|
 |-:|:-|
