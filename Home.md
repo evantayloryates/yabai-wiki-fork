@@ -11,7 +11,7 @@
 
 yabai is a tiling window manager for macOS High Sierra 10.13.6 and macOS Mojave 10.14.4+. It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
 
-A flexible and easy-to-grok command line interface allows you to control and query windows, spaces and displays to enable powerful integration with tools like [&rightarrow;&nbsp;skhd][gh-skhd] to allow you to work more efficiently with macOS. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
+A flexible and easy-to-grok command line interface allows you to control and query windows, spaces and displays to enable powerful integration with tools like [&nearr;&nbsp;skhd][gh-skhd] to allow you to work more efficiently with macOS. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
 
 ### Installation requirements
 
@@ -37,13 +37,13 @@ yabai can be installed via Homebrew from a custom tap. It does, however, require
 1. Optional: Disable System Integrity Protection (required for many advanced features)
 2. Install yabai and configure macOS to allow it to run
 3. Configure yabai to your liking
-4. Optional: Integrate yabai with other software like [&rightarrow;&nbsp;skhd][gh-skhd] for keyboard shortcuts or [&rightarrow;&nbsp;Übersicht][gh-uebersicht] for desktop widgets
+4. Optional: Integrate yabai with other software like [&nearr;&nbsp;skhd][gh-skhd] for keyboard shortcuts or [&nearr;&nbsp;Übersicht][gh-uebersicht] for desktop widgets
 
 You can find detailed instructions on every step of the quickstart guide in this wiki. The sidebar to the right (bottom for mobile devices) has a sorted list of pages with links to individual chapters. 
 
 ### Should you upgrade from chunkwm?
 
-A commonly asked question is whether you should update from [&rightarrow;&nbsp;chunkwm][gh-chunkwm] to yabai right now. In general, the answer to this is yes. 
+A commonly asked question is whether you should update from [&nearr;&nbsp;chunkwm][gh-chunkwm] to yabai right now. In general, the answer to this is yes. 
 
 There is, however, one notable exception: If you are heavily invested into the plugin API and absolutely cannot replace your plugins using the signals and rules provided by yabai, you should continue to use chunkwm.
 
@@ -59,7 +59,7 @@ Useful HTML entities for this table:
 - Ballot X symbol:   &#10007;
 --->
 
-||yabai|[&rightarrow;&nbsp;chunkwm][gh-chunkwm]|[&rightarrow;&nbsp;Amethyst][gh-amethyst]|
+||yabai|[&nearr;&nbsp;chunkwm][gh-chunkwm]|[&nearr;&nbsp;Amethyst][gh-amethyst]|
 |-:|:-:|:-:|:-:|
 |**General**|
 |Supported macOS versions|10.13–10.15|10.13–10.14|10.12–10.15|
