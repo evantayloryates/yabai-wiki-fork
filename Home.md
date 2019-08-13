@@ -22,7 +22,7 @@ A flexible and easy-to-grok command line interface allows you to control and que
 |Code&nbsp;Signing|When building from source (or installing from HEAD), it is recommended to codesign the binary  so it retains its accessibility and automation privileges when updated or rebuilt.|
 |Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Displays have separate Spaces" must be enabled.|
 |**Recommendation**||
-|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be disabled for **yabai** to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections, and enables additional features of yabai.|
+|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be disabled for yabai to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections, and enables additional features of yabai.|
 |Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Automatically rearrange Spaces based on most recent use" should be enabled for commands that rely on the ordering of spaces to work reliably.|
 
 
