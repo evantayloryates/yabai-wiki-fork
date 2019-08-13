@@ -1,5 +1,5 @@
 <h1 align="center">yabai</h1>
-<p align="center">Tiling window management for the Mac.</p>
+<p align="center">Tiling window management native to the Mac.</p>
 <p align="center">
     <a href="https://github.com/koekeishiya/yabai/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/koekeishiya/yabai.svg?color=green" alt="license"></a>
     <a href="https://travis-ci.org/koekeishiya/yabai"><img src="https://travis-ci.org/koekeishiya/yabai.svg?branch=master" alt="ci status"></a>
@@ -9,25 +9,28 @@
 
 ### What is yabai?
 
-yabai is a tiling window manager for macOS High Sierra 10.13.6 and macOS Mojave 10.14.5. It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
+yabai is a tiling window manager for macOS High Sierra 10.13.6 and macOS Mojave 10.14.4+. It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
 
-Integration with [&rightarrow;&nbsp;skhd][gh-skhd] allows you to become the macOS power user you have always wanted to be. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
+A flexible and easy-to-grok command line interface allows you to control and query windows, spaces and displays to enable powerful integration with tools like [&rightarrow;&nbsp;skhd][gh-skhd] to allow you to work more efficiently with macOS. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
 
-### Installation requirements
+### Installation
 
-|Requirement|Note|
+|Requirement||
 |-:|:-|
 |Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, macOS&nbsp;Mojave&nbsp;10.14.4+ and macOS&nbsp;Catalina&nbsp;Dev&nbsp;Beta&nbsp;2+ are supported.|
-|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be disabled for **yabai** to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections.|
-|Accessibility&nbsp;API|**yabai** must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
+|Accessibility&nbsp;API|yabai must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
 |Code&nbsp;Signing|When building from source (or installing from HEAD), it is recommended to codesign the binary  so it retains its accessibility and automation privileges when updated or rebuilt.|
-|Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Displays have separate Spaces" must be enabled. Additionally it is recommended to disable "Automatically rearrange Spaces based on most recent use".|
+|Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Displays have separate Spaces" must be enabled.|
+|**Recommendation**||
+|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be disabled for **yabai** to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections, and enables additional features of yabai.|
+|Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Automatically rearrange Spaces based on most recent use" should be enabled for commands that rely on the ordering of spaces to work reliably.|
+
 
 ### Quickstart guide
 
 yabai can be installed via Homebrew from a custom tap. It does, however, require you to disable System Integrity Protection ("rootless"), because it controls windows by acting through Dock.app&thinsp;—&thinsp;which is the sole owner of the main connection to the window server.
 
-1. Disable System Integrity Protection
+1. Optional: Disable System Integrity Protection (required for many advanced features)
 2. Install yabai and configure macOS to allow it to run
 3. Configure yabai to your liking
 4. Optional: Integrate yabai with other software like [&rightarrow;&nbsp;skhd][gh-skhd] for keyboard shortcuts or [&rightarrow;&nbsp;Übersicht][gh-uebersicht] for desktop widgets
