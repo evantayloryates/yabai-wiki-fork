@@ -13,7 +13,7 @@ yabai is a tiling window manager for macOS High Sierra 10.13.6 and macOS Mojave 
 
 A flexible and easy-to-grok command line interface allows you to control and query windows, spaces and displays to enable powerful integration with tools like [&rightarrow;&nbsp;skhd][gh-skhd] to allow you to work more efficiently with macOS. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
 
-### Installation
+### Installation requirements
 
 |Requirement||
 |-:|:-|
