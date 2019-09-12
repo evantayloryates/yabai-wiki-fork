@@ -1,4 +1,4 @@
-<img align="left" width="25%" src="https://github.com/koekeishiya/yabai/blob/master/assets/icon/icon.svg" alt="Icon">
+<img align="left" height="25" src="https://github.com/koekeishiya/yabai/blob/master/assets/icon/icon.svg" alt="Icon">
 <h3>Documentation</h3>
 
 <details open>
