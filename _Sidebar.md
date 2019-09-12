@@ -1,8 +1,8 @@
-<p align="center">
-  <img width="50%" src="https://github.com/koekeishiya/yabai/blob/master/assets/icon/icon.svg" alt="Icon">
-</p>
+<div align="center">
+  <h3>Documentation</h3>
+  <img width="40%" src="https://github.com/koekeishiya/yabai/blob/master/assets/icon/icon.svg" alt="Icon">
+</div>
 
-<div align="center"><h3>Documentation</h3></div>
 
 <details open>
 <summary><b>General</b></summary>
