@@ -1,5 +1,5 @@
+<img align="left" width="25%" src="https://github.com/koekeishiya/yabai/blob/master/assets/icon/icon.svg" alt="Icon">
 <h3>Documentation</h3>
-<img align="right" width="25%" src="https://github.com/koekeishiya/yabai/blob/master/assets/icon/icon.svg" alt="Icon">
 
 <details open>
 <summary><b>General</b></summary>
