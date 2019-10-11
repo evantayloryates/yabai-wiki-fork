@@ -18,7 +18,19 @@ The following features of yabai require System Integrity Protection to be disabl
 1. Turn off your device
 2. Hold down <kbd>command ⌘</kbd><kbd>R</kbd> while booting your device.
 3. In the menu bar, choose `Utilities`, then `Terminal`
-4. Run the command `csrutil disable`
+
+If you're on macOS 10.13
+```
+csrutil enable --without debug
+```
+
+**or**
+
+If you're on macOS 10.14 and above
+```bash
+csrutil enable --without debug --without fs
+```
+
 5. Reboot
 6. You can verify that System Integrity Protection is turned off by running `csrutil status`, which returns `System Integrity Protection status: disabled.` if it is turned off
 
