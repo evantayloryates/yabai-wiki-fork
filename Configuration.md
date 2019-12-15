@@ -74,7 +74,7 @@ yabai -m config split_ratio 0.5
 
 When you drag a tiled window onto another, yabai swaps their positions in the window tree. If you resize a tiled window, yabai will adjust splits to fit automatically.
 
-Additionally, yabai can enable you to move and resize windows by clicking anywhere on them while holding a modifier key. The ability to move a window by clicking anywhere in its frame requires the scripting-addition to be installed. 
+Additionally, yabai can enable you to move and resize windows by clicking anywhere on them while holding a modifier key.
 
 ```sh
 # set mouse interaction modifier key (default: fn)
