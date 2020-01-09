@@ -75,6 +75,19 @@ yabai -m space --move next
 yabai -m space --display 2
 ```
 
+#### Labeling Spaces
+
+Spaces can be given labels, which allow referring to a space by the given label in subsequent commands. 
+
+To label a space use the `--label` command:
+
+```
+yabai -m space 1 --label main
+yabai -m space 2 --label sm
+
+yabai -m space --focus main
+```
+
 #### Modify window tree
 
 In bsp spaces commands can be used to modify the window tree, affecting all windows on the space.
