@@ -48,6 +48,7 @@
   - [Focus space](https://github.com/koekeishiya/yabai/wiki/Commands#focus-space)
   - [Create and destroy spaces](https://github.com/koekeishiya/yabai/wiki/Commands#create-and-destroy-spaces)
   - [Move spaces](https://github.com/koekeishiya/yabai/wiki/Commands#move-spaces)
+  - [Label spaces](https://github.com/koekeishiya/yabai/wiki/Commands#label-spaces)
   - [Modify window tree](https://github.com/koekeishiya/yabai/wiki/Commands#modify-window-tree)
   - [Modify space layout](https://github.com/koekeishiya/yabai/wiki/Commands#modify-space-layout)
   - [Modify padding and gaps](https://github.com/koekeishiya/yabai/wiki/Commands#modify-padding-and-gaps)
