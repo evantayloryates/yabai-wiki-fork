@@ -75,7 +75,7 @@ yabai -m space --move next
 yabai -m space --display 2
 ```
 
-#### Labeling Spaces
+#### Label Spaces
 
 Spaces can be given labels, which allow referring to a space by the given label in subsequent commands. 
 
