@@ -127,7 +127,7 @@ yabai -m config normal_window_opacity 0.9
 #    insert means selected window
 # window radius (default: -1)
 # - radius has unit 1pt
-# - value of `-1` tells Yabai to calculate a radius automatically
+# - value of `-1` tells yabai to calculate a radius automatically
 # - other valid values are `0 .. 20` inclusive, use `0` for square-borders and anything above (up to 20) for rounded.
 yabai -m config window_border on
 yabai -m config window_border_width 4
