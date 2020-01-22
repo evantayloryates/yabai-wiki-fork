@@ -22,14 +22,14 @@ The following features of yabai require System Integrity Protection to be disabl
 
 If you're on macOS 10.13
 ```
-csrutil enable --without debug
+csrutil disable --without debug
 ```
 
 **or**
 
 If you're on macOS 10.14 and above
 ```bash
-csrutil enable --without debug --without fs
+csrutil disable --without debug --without fs
 ```
 
 5. Reboot
