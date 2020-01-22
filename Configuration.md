@@ -4,7 +4,11 @@ This wiki page aims to explain every configuration option in detail.
 
 ### Configuration file
 
-The per–user yabai configuration file must be named `.yabairc`, must be in your home–directory and must be executable. It's just a shell script that's ran before yabai launches. 
+The per-user yabai configuration file must be executable; it is just a shell script that's ran before yabai launches. It must be placed at one of the following places (in order):
+
+ - `$XDG_CONFIG_HOME/yabai/yabairc`
+ - `$HOME/.config/yabai/yabairc`
+ - `$HOME/.yabairc`
 
 ```sh
 # create empty configuration file and make it executable
@@ -12,7 +16,7 @@ touch ~/.yabairc
 chmod +x ~/.yabairc
 ```
 
-All of the configuration options except for status bar settings can be changed at runtime as well.
+All of the configuration options can be changed at runtime as well.
 
 ### Tiling options
 
