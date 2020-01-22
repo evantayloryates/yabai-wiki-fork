@@ -1,8 +1,8 @@
 <h1 align="center">yabai</h1>
 <p align="center">Tiling window management native to the Mac.</p>
 <p align="center">
-    <a href="https://github.com/koekeishiya/yabai/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/koekeishiya/yabai.svg?color=green" alt="license"></a>
     <a href="https://travis-ci.org/koekeishiya/yabai"><img src="https://travis-ci.org/koekeishiya/yabai.svg?branch=master" alt="ci status"></a>
+    <a href="https://github.com/koekeishiya/yabai/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/koekeishiya/yabai.svg?color=green" alt="license"></a>
     <a href="https://github.com/koekeishiya/yabai/blob/master/CHANGELOG.md"><img src="https://img.shields.io/badge/view-changelog-green.svg" alt="changelog"></a>
     <a href="https://github.com/koekeishiya/yabai/releases"><img src="https://img.shields.io/github/commits-since/koekeishiya/yabai/latest.svg?color=green" alt="version"></a>
 </p>
