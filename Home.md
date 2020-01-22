@@ -9,7 +9,7 @@
 
 ### What is yabai?
 
-yabai is a tiling window manager for macOS High Sierra 10.13.6 and macOS Mojave 10.14.4+. It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
+yabai is a tiling window manager for macOS High Sierra 10.13.6, Mojave 10.14.4+ and Catalina 10.15.0+. It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
 
 A flexible and easy-to-grok command line interface allows you to control and query windows, spaces and displays to enable powerful integration with tools like [&nearr;&nbsp;skhd][gh-skhd] to allow you to work more efficiently with macOS. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
 
@@ -19,13 +19,13 @@ Please read the below requirements and recommendations carefully. Make sure you 
 
 |Requirement|Note|
 |-:|:-|
-|Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, macOS&nbsp;Mojave&nbsp;10.14.4+ and macOS&nbsp;Catalina&nbsp;Dev&nbsp;Beta&nbsp;2+ are supported.|
+|Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, macOS&nbsp;Mojave&nbsp;10.14.4+ and macOS&nbsp;Catalina&nbsp;10.15.0+ are supported.|
 |Accessibility&nbsp;API|yabai must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
 |Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Displays have separate Spaces" must be enabled.|
 
 |Recommendation|Note|
 |-:|:-|
-|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be disabled for yabai to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections, and enables additional features of yabai. If you are running on macOS High Sierra 10.13.6, you can reenable SIP after the scripting-addition has been installed.|
+|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be (partially) disabled for yabai to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections, and enables additional features of yabai. If you are running on macOS High Sierra 10.13.6, you can reenable SIP after the scripting addition has been installed.|
 |Code&nbsp;Signing|When building from source (or installing from HEAD), it is recommended to codesign the binary  so it retains its accessibility and automation privileges when updated or rebuilt.|
 |Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Automatically rearrange Spaces based on most recent use" should be disabled for commands that rely on the ordering of spaces to work reliably.|
 
