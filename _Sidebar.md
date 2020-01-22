@@ -21,6 +21,8 @@
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#updating-to-the-latest-release)
 - [Install: Dev version](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD))
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#updating-to-latest-head)
+- [Uninstall](https://github.com/koekeishiya/yabai/wiki/Uninstalling-yabai)
+
 
 </details>
 
