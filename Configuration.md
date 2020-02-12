@@ -10,6 +10,14 @@ The per-user yabai configuration file must be executable; it is just a shell scr
  - `$HOME/.config/yabai/yabairc`
  - `$HOME/.yabairc`
 
+### Logging
+
+In the case something is not working as you're expecting, please make sure to take a look in the output and error log . You can find the log files in 
+
+```
+/usr/local/var/log/yabai/
+```
+
 ```sh
 # create empty configuration file and make it executable
 touch ~/.yabairc
