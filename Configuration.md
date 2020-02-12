@@ -20,7 +20,7 @@ All of the configuration options can be changed at runtime as well.
 
 ### Debug output and error reporting
 
-In the case something is not working as you're expecting, please make sure to take a look in the output and error log. To enable debug output make sure that your configuration file contains `yabai -m config debug_output on` or that yabai is launched with the `--verbose` flag. If you are running through Brew services the log files is located in the following directory: 
+In the case something is not working as you're expecting, please make sure to take a look in the output and error log. To enable debug output make sure that your configuration file contains `yabai -m config debug_output on` or that yabai is launched with the `--verbose` flag. If you are running through `brew services` the log files can be found in the following directory: 
 
 ```sh
 # directory containing log files (HOMEBREW_PREFIX defaults to /usr/local unless you manually specified otherwise)
