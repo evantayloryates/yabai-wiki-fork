@@ -18,12 +18,19 @@ chmod +x ~/.yabairc
 
 All of the configuration options can be changed at runtime as well.
 
-### Logging
+### Debug output and error reporting
 
-In the case something is not working as you're expecting, please make sure to take a look in the output and error log . You can find the log files in 
+In the case something is not working as you're expecting, please make sure to take a look in the output and error log. To enable debug output make sure that your configuration contains `yabai -m config debug_output on` or that yabai is launched with the `--verbose` flag. If you are running through Brew services the log files is located in the following directory: 
 
-```
-/usr/local/var/log/yabai/
+```sh
+# directory containing log files (HOMEBREW_PREFIX defaults to /usr/local unless you manually specified otherwise)
+HOMEBREW_PREFIX/var/log/yabai/
+
+# view the last lines of the error log 
+tail -f /usr/local/var/log/yabai/yabai.err.log
+
+# view the last lines of the debug log
+tail -f /usr/local/var/log/yabai/yabai.out.log
 ```
 
 ### Tiling options
