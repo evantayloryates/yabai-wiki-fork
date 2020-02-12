@@ -13,6 +13,7 @@ The following features of yabai require System Integrity Protection to be disabl
 * control window layers (make windows appear topmost)
 * sticky windows (make windows appear on all spaces)
 * move window by clicking anywhere in its frame
+* toggle picture-in-picture for any given window
 
 ### How do I disable System Integrity Protection?
 
