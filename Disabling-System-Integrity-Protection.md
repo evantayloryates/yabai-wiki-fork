@@ -20,7 +20,7 @@ The following features of yabai require System Integrity Protection to be (parti
 1. Turn off your device
 2. Hold down <kbd>command ⌘</kbd><kbd>R</kbd> while booting your device.
 3. In the menu bar, choose `Utilities`, then `Terminal`
-
+4.
 ```bash
 # If you're on macOS 10.14 and above
 csrutil enable --without debug --without fs
