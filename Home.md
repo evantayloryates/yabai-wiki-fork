@@ -32,7 +32,7 @@ Please read the below requirements and recommendations carefully. Make sure you 
 
 ### Quickstart guide
 
-yabai can be installed via Homebrew from a custom tap. It does, however, require you to disable System Integrity Protection ("rootless"), because it controls windows by acting through Dock.app&thinsp;—&thinsp;which is the sole owner of the main connection to the window server.
+yabai can be installed via Homebrew from a custom tap. It does, however, require you to partially disable System Integrity Protection ("rootless"), because it controls windows by acting through Dock.app&thinsp;—&thinsp;which is the sole owner of the main connection to the window server.
 
 1. Optional: Disable System Integrity Protection (required for many advanced features)
 2. Install yabai and configure macOS to allow it to run
@@ -63,7 +63,7 @@ Useful HTML entities for this table:
 |-:|:-:|:-:|:-:|
 |**General**|
 |Supported macOS versions|10.13–10.15|10.13–10.14|10.12–10.15|
-|Works with SIP enabled|&#10007;|&#10003;*|&#10003;|
+|Works with SIP enabled|&#10003;*|&#10003;*|&#10003;|
 |Integrate with 3rd party tools|Signals, Rules and Commands|Rules and Commands**|&#10007;|
 |Plugin API|&#10007;|&#10003;|&#10007;|
 |**Windows**|
