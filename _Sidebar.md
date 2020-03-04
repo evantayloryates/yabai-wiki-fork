@@ -30,7 +30,7 @@
 <summary><b>Configuration</b></summary>
 
 - [Configuration file](https://github.com/koekeishiya/yabai/wiki/Configuration#configuration-file)
-  - [Debug output and error reporting](https://github.com/koekeishiya/yabai/wiki/Configuration#debug-output-and-error-reporting)
+- [Debug output and error reporting](https://github.com/koekeishiya/yabai/wiki/Configuration#debug-output-and-error-reporting)
 - [Tiling options](https://github.com/koekeishiya/yabai/wiki/Configuration#tiling-options)
   - [Layout](https://github.com/koekeishiya/yabai/wiki/Configuration#layout)
   - [Padding and gaps](https://github.com/koekeishiya/yabai/wiki/Configuration#padding-and-gaps)
