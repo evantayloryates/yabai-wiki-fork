@@ -162,7 +162,10 @@ The below snippet makes yabai update its status bar battery icon depending on yo
 
 ```sh
 function update_battery_loop() {
-	while true; do
+        # seconds to wait betwwen each refresh
+        frequency=300
+	
+        while true; do
 		# Get the current battery percentage.
 		battery=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
 
