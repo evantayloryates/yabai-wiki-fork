@@ -10,7 +10,7 @@ The format for commands is `yabai -m <category> <command>`.
 
 You might remember this format from the previous chapter about [&rightarrow;&nbsp;configuration options][wiki-config], which used the same message passing interface. 
 
-The [&rightarrow;&nbsp;example&nbsp;skhdrc][example-skhdrc] shows how you can integrate these commands with [&rightarrow;&nbsp;gh-skhd], a hotkey utility for macOS. This file is an example showing how to control yabai using keyboard shortcuts. Note that it is not a good example for all keyboard layouts and is highly opinionated. It is recommended to build your own skhdrc file from scratch to suit your needs.
+The [&rightarrow;&nbsp;example&nbsp;skhdrc][example-skhdrc] shows how you can integrate these commands with [&rightarrow;&nbsp;skhd][gh-skhd], a hotkey utility for macOS. This file is an example showing how to control yabai using keyboard shortcuts. Note that it is not a good example for all keyboard layouts and is highly opinionated. It is recommended to build your own skhdrc file from scratch to suit your needs.
 
 ### Display commands
 
