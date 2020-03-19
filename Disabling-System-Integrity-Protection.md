@@ -23,10 +23,15 @@ The following features of yabai require System Integrity Protection to be (parti
 4.
 ```bash
 # If you're on macOS 10.14 and above
+# (printed warning can be safely ignored)
 csrutil enable --without debug --without fs
 
 # **or** if you're on macOS 10.13
+# (printed warning can be safely ignored)
 csrutil enable --without debug
+
+# **or** if you want to disable SIP completely
+csrutil disable
 ```
 
 5. Reboot
