@@ -12,6 +12,8 @@ You might remember this format from the previous chapter about [&rightarrow;&nbs
 
 The [&rightarrow;&nbsp;example&nbsp;skhdrc][example-skhdrc] shows how you can integrate these commands with [&rightarrow;&nbsp;skhd][gh-skhd], a hotkey utility for macOS. This file is an example showing how to control yabai using keyboard shortcuts. Note that it is not a good example for all keyboard layouts and is highly opinionated. It is recommended to build your own skhdrc file from scratch to suit your needs.
 
+Most commands will return a non-zero exit code upon failure, which is useful for scripting purposes.
+
 ### Display commands
 
 The arrangement indices for displays can be seen in the Displays > Arrangement preference pane in the System Preferences.
@@ -50,6 +52,12 @@ yabai -m space --focus next
 
 # Focus space with mission-control index 2
 yabai -m space --focus 2
+
+# Focus next space by mission-control index if one exists, otherwise focus the first space
+yabai -m space --focus next || yabai -m space --focus first
+
+# Focus previous space by mission-control index if one exists, otherwise focus the last space
+yabai -m space --focus prev || yabai -m space --focus last
 ```
 
 #### Create and destroy spaces
