@@ -160,7 +160,8 @@ yabai -m config insert_window_border_color 0xffd75f5f
 
 Third-party tools like [&rightarrow;&nbsp;Übersicht][gh-uebersicht] can be used to create custom status bars.
 
-There is also an option to integrate your custom bar with the padding functionality (specifically: `space --toggle padding`)  that yabai provides: 
+There is also an option to integrate your custom bar with the padding functionality (specifically: `space --toggle padding`)  that yabai provides. Note that you do not need to include this padding in the regular space settings.
+
 ```
 # add 20 padding to the top and 0 padding to the bottom of every space located on the main display
 yabai -m external_bar main:20:0
@@ -168,6 +169,7 @@ yabai -m external_bar main:20:0
 # add 20 padding to the top and bottom of all spaces regardless of the display it belongs to
 yabai -m external_bar all:20:20
 ``` 
+
 
 You can turn on autohiding of the macOS menubar so that it only shows up when you move your cursor to access it: System Preferences -> General -> Automatically hide and show the menu bar.
 
