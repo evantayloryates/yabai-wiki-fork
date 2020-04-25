@@ -145,7 +145,7 @@ Third-party tools like [&rightarrow;&nbsp;Übersicht][gh-uebersicht] can be used
 
 There is also an option to integrate your custom bar with the padding functionality (specifically: `space --toggle padding`)  that yabai provides. Note that you do not need to include this padding in the regular space settings.
 
-```
+```sh
 # add 20 padding to the top and 0 padding to the bottom of every space located on the main display
 yabai -m external_bar main:20:0
 
