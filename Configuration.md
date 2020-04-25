@@ -137,23 +137,6 @@ yabai -m config window_shadow float
 yabai -m config window_opacity on
 yabai -m config active_window_opacity 1.0
 yabai -m config normal_window_opacity 0.9
-
-# window border (default: off)
-# - width has unit 1pt
-# - colors for borders are in the format AARRGGBB (alpha, red, green, blue) 
-#    as a hexadecimal value
-# - active means focused window, normal means unfocused window, 
-#    insert means selected window
-# window radius (default: -1)
-# - radius has unit 1pt
-# - value of `-1` tells yabai to calculate a radius automatically
-# - other valid values are `0 .. 20` inclusive, use `0` for square-borders and anything above (up to 20) for rounded.
-yabai -m config window_border on
-yabai -m config window_border_width 4
-yabai -m config window_border_radius -1.0
-yabai -m config active_window_border_color 0xff775759
-yabai -m config normal_window_border_color 0xff505050
-yabai -m config insert_window_border_color 0xffd75f5f
 ```
 
 ### Status bar
