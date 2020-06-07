@@ -41,13 +41,6 @@ yabai can be installed via Homebrew from a custom tap. It does, however, require
 
 You can find detailed instructions on every step of the quickstart guide in this wiki. The sidebar to the right (bottom for mobile devices) has a sorted list of pages with links to individual chapters. 
 
-### Should you upgrade from chunkwm?
-
-A commonly asked question is whether you should update from [&nearr;&nbsp;chunkwm][gh-chunkwm] to yabai right now. In general, the answer to this is yes. 
-
-There is, however, one notable exception: If you are heavily invested into the plugin API and absolutely cannot replace your plugins using the signals and rules provided by yabai, you should continue to use chunkwm.
-
-Please note that chunkwm will not work on macOS 10.15 Catalina.
 
 ### Comparison with other window managers
 
@@ -59,26 +52,23 @@ Useful HTML entities for this table:
 - Ballot X symbol:   &#10007;
 --->
 
-||yabai|[&nearr;&nbsp;chunkwm][gh-chunkwm]|[&nearr;&nbsp;Amethyst][gh-amethyst]|
-|-:|:-:|:-:|:-:|
+||yabai|[&nearr;&nbsp;Amethyst][gh-amethyst]|
+|-:|:-:|:-:|
 |**General**|
-|Supported macOS versions|10.13–10.15|10.13–10.14|10.12–10.15|
-|Works with SIP enabled|&#10003;*|&#10003;*|&#10003;|
-|Integrate with 3rd party tools|Signals, Rules and Commands|Rules and Commands**|&#10007;|
-|Plugin API|&#10007;|&#10003;|&#10007;|
+|Supported macOS versions|10.13–10.15|10.12–10.15|
+|Works with SIP enabled|&#10003;*|&#10003;|
+|Integrate with 3rd party tools|Signals, Rules and Commands|&#10007;|
 |**Windows**|
-|Modify window properties|&#10003;|&#10003;|&#10007;|
+|Modify window properties|&#10003;|&#10007;|
 |**Spaces**|
-|Create and destroy spaces|&#10003;|&#10003;|&#10007;|
-|Move spaces|&#10003;|&#10007;|&#10007;|
+|Create and destroy spaces|&#10003;|&#10007;|
+|Move spaces|&#10003;|&#10007;|
 |**Displays**|
-|Support multiple displays|&#10003;|&#10003;*|&#10003;*|
+|Support multiple displays|&#10003;|&#10003;*|
 
 
 \* partially  
-\*\* `chunkwm` commands have meaningless return values
 
 [gh-skhd]: https://github.com/koekeishiya/skhd
 [gh-uebersicht]: https://github.com/felixhageloh/uebersicht
-[gh-chunkwm]: https://github.com/koekeishiya/chunkwm
 [gh-amethyst]: https://github.com/ianyh/Amethyst
