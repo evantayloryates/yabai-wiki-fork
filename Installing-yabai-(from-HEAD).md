@@ -53,7 +53,6 @@ After the above edit has been made, simply add the command to load the scripting
 #
 # for this to work you must configure sudo such that
 # it will be able to run the command without password
-#
 
 sudo yabai --load-sa
 
