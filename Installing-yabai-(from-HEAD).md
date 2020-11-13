@@ -24,14 +24,40 @@ Now install the scripting addition.
 sudo yabai --install-sa
 ```
 
-To run yabai, simply start it and then restart *Dock.app* to load the scripting addition. Alternatively you can also logout and login again.
+To run yabai, simply start it.
 
 ```sh
 # start yabai
 brew services start yabai
+```
 
-# load the scripting addition
-pkill Dock
+In macOS Big Sur we had to switch to using the mach API to inject the scripting addition. Injection now has to run with elevated (root) privileges, meaning that yabai is no longer able to automatically load the scripting addition during startup. However, you can use the following workaround to make it pretty much as seamless as it used to be. The trick is to allow your user to execute *yabai --load-sa* as the root user without having to enter a password. To do this, we add a new configuration entry that is loaded by */etc/sudoers*.
+
+```
+# open/create a new file for writing using the vim editor (use nano or something if you are not familiar with vim)
+sudo vim /private/etc/sudoers.d/yabai
+
+# input the line below into the file you are editing.
+# replace <user> with your username (output of whoami). 
+# change the path to the yabai binary if necessary 
+<user> ALL = (root) NOPASSWD: /opt/local/bin/yabai --load-sa
+```
+
+After the above edit has been made, simply add the command to load the scripting addition to the top of your yabairc config file
+
+```
+# the scripting-addition must be loaded manually if
+# you are running yabai on macOS Big Sur. Uncomment
+# the following line to have the injection performed
+# when the config is executed during startup.
+#
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+#
+
+sudo yabai --load-sa
+
+# .. more yabai startup stuff
 ```
 
 ### Updating to latest HEAD
@@ -49,13 +75,12 @@ brew services stop koekeishiya/formulae/yabai
 brew reinstall koekeishiya/formulae/yabai
 codesign -fs "${YABAI_CERT:-yabai-cert}" "$(brew --prefix yabai)/bin/yabai"
 
-# reinstall the scripting addition
+# uninstall the scripting addition
 sudo yabai --uninstall-sa
+
+# installing the scripting addition will restart Dock.app
 sudo yabai --install-sa
 
-# start yabai
+# finally, start yabai
 brew services start koekeishiya/formulae/yabai
-
-# load the scripting addition
-killall Dock
 ```
