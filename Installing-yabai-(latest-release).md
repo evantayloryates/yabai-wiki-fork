@@ -32,6 +32,23 @@ sudo vim /private/etc/sudoers.d/yabai
 <user> ALL = (root) NOPASSWD: /opt/local/bin/yabai --load-sa
 ```
 
+After the above edit has been made, simply add the command to load the scripting addition to the top of your yabairc config file
+
+```
+# the scripting-addition must be loaded manually if
+# you are running yabai on macOS Big Sur. Uncomment
+# the following line to have the injection performed
+# when the config is executed during startup.
+#
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+#
+
+sudo yabai --load-sa
+
+# .. more yabai startup stuff
+```
+
 ### Updating to the latest release
 
 To update yabai to the latest version, simply upgrade it with Homebrew and reinstall the scripting addition:
