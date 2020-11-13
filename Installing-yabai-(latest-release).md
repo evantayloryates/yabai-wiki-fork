@@ -13,30 +13,40 @@ Now install the scripting addition.
 sudo yabai --install-sa
 ```
 
-To run yabai, simply start it and then restart *Dock.app* to load the scripting addition. Alternatively you can also logout and login again.
+To run yabai, simply start it. 
 
 ```sh
 # start yabai
 brew services start yabai
+```
 
-# load the scripting addition
-killall Dock
+In macOS Big Sur we had to switch to using the mach API to inject the scripting addition. Injection now has to run with elevated (root) privileges, meaning that yabai is no longer able to automatically load the scripting addition during startup. However, you can use the following workaround to make it pretty much as seamless as it used to be. The trick is to allow your user to execute *yabai --load-sa* as the root user without having to enter a password. To do this, we add a new configuration entry that is loaded by */etc/sudoers*.
+
+```
+# open/create a new file for writing using the vim editor (use nano or something if you are not familiar with vim)
+sudo vim /private/etc/sudoers.d/yabai
+
+# input the line below into the file you are editing.
+# replace <user> with your username (output of whoami). 
+# change the path to the yabai binary if necessary 
+<user> ALL = (root) NOPASSWD: /opt/local/bin/yabai --load-sa
 ```
 
 ### Updating to the latest release
 
-To update yabai to the latest version, simply upgrade it with Homebrew, reinstall the scripting addition and restart *Dock.app* again:
+To update yabai to the latest version, simply upgrade it with Homebrew and reinstall the scripting addition:
 
 ```sh
-# stop, upgrade, start yabai
+# stop, and upgrade yabai
 brew services stop yabai
 brew upgrade yabai
-brew services start yabai
 
-# reinstall the scripting addition
+# uninstall the scripting addition
 sudo yabai --uninstall-sa
+
+# installing the scripting addition will restart Dock.app
 sudo yabai --install-sa
 
-# load the scripting addition
-killall Dock
+# finally, start yabai
+brew services start yabai
 ```
