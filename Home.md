@@ -9,7 +9,8 @@
 
 ### What is yabai?
 
-yabai is a tiling window manager for macOS High Sierra 10.13.6, Mojave 10.14.4+ and Catalina 10.15.0+. It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
+yabai is a tiling window manager for macOS High Sierra 10.13.6, Mojave 10.14.4+, Catalina 10.15.0+ and Big Sur 11.0.1.  
+It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
 
 A flexible and easy-to-grok command line interface allows you to control and query windows, spaces and displays to enable powerful integration with tools like [&nearr;&nbsp;skhd][gh-skhd] to allow you to work more efficiently with macOS. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
 
@@ -19,7 +20,7 @@ Please read the below requirements and recommendations carefully. Make sure you 
 
 |Requirement|Note|
 |-:|:-|
-|Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, macOS&nbsp;Mojave&nbsp;10.14.4+ and macOS&nbsp;Catalina&nbsp;10.15.0+ are supported.|
+|Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, macOS&nbsp;Mojave&nbsp;10.14.4+, macOS&nbsp;Catalina&nbsp;10.15.0+ and macOS&nbsp;Big Sur&nbsp;11.0.1 are supported.|
 |Accessibility&nbsp;API|yabai must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
 |Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Displays have separate Spaces" must be enabled.|
 
