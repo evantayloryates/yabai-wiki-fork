@@ -20,7 +20,7 @@ Please read the below requirements and recommendations carefully. Make sure you 
 
 |Requirement|Note|
 |-:|:-|
-|Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, macOS&nbsp;Mojave&nbsp;10.14.4+, macOS&nbsp;Catalina&nbsp;10.15.0+ and macOS&nbsp;Big Sur&nbsp;11.0.1 are supported.|
+|Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, Mojave&nbsp;10.14.4+, Catalina&nbsp;10.15.0+ and Big Sur&nbsp;11.0.1 are supported.|
 |Accessibility&nbsp;API|yabai must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
 |Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Displays have separate Spaces" must be enabled.|
 
