@@ -55,6 +55,7 @@ After the above edit has been made, simply add the command to load the scripting
 # it will be able to run the command without password
 
 sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # .. more yabai startup stuff
 ```
