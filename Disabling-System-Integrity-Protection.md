@@ -23,7 +23,13 @@ The following features of yabai require System Integrity Protection to be (parti
 3. In the menu bar, choose `Utilities`, then `Terminal`
 4.
 ```bash
-# If you're on macOS 10.14 and above
+# If you're on macOS 11.0.1
+# Requires Filesystem Protections and Debugging Restrictions to be disabled, but --without debug does not work
+# (disables SIP completely)
+csrutil disable
+
+# If you're on macOS 10.14 and 10.15
+# Requires Filesystem Protections and Debugging Restrictions to be disabled
 # (printed warning can be safely ignored)
 csrutil enable --without debug --without fs
 
