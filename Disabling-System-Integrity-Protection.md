@@ -24,9 +24,9 @@ The following features of yabai require System Integrity Protection to be (parti
 4.
 ```bash
 # If you're on macOS 11.0.1
-# Requires Filesystem Protections and Debugging Restrictions to be disabled, but --without debug does not work
-# (disables SIP completely)
-csrutil disable
+# Requires Filesystem Protections and Debugging Restrictions to be disabled (workaround because --without debug does not work)
+# (printed warning can be safely ignored)
+csrutil disable --with kext --with dtrace --with nvram --with basesystem
 
 # If you're on macOS 10.14 and 10.15
 # Requires Filesystem Protections and Debugging Restrictions to be disabled
