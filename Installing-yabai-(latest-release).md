@@ -20,6 +20,8 @@ To run yabai, simply start it.
 brew services start yabai
 ```
 
+### macOS Big Sur - Automatically load scripting addition on startup
+
 In macOS Big Sur we had to switch to using the mach API to inject the scripting addition. Injection now has to run with elevated (root) privileges, meaning that yabai is no longer able to automatically load the scripting addition during startup. However, you can use the following workaround to make it pretty much as seamless as it used to be. The trick is to allow your user to execute *yabai --load-sa* as the root user without having to enter a password. To do this, we add a new configuration entry that is loaded by */etc/sudoers*.
 
 ```
