@@ -56,7 +56,7 @@ Useful HTML entities for this table:
 ||yabai|[&nearr;&nbsp;Amethyst][gh-amethyst]|
 |-:|:-:|:-:|
 |**General**|
-|Supported macOS versions|10.13–10.15|10.12–10.15|
+|Supported macOS versions|10.13–11.0|10.12–11.0|
 |Works with SIP enabled|&#10003;*|&#10003;|
 |Integrate with 3rd party tools|Signals, Rules and Commands|&#10007;|
 |**Windows**|
