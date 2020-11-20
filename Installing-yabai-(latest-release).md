@@ -29,7 +29,7 @@ sudo vim /private/etc/sudoers.d/yabai
 # input the line below into the file you are editing.
 # replace <user> with your username (output of whoami). 
 # change the path to the yabai binary if necessary 
-<user> ALL = (root) NOPASSWD: /opt/local/bin/yabai --load-sa
+<user> ALL = (root) NOPASSWD: /usr/local/bin/yabai --load-sa
 ```
 
 After the above edit has been made, simply add the command to load the scripting addition to the top of your yabairc config file
