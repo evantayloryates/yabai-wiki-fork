@@ -40,8 +40,8 @@ In macOS Big Sur we had to switch to using the mach API to inject the scripting 
 sudo vim /private/etc/sudoers.d/yabai
 
 # input the line below into the file you are editing.
-# replace <user> with your username (output of whoami). 
-# change the path to the yabai binary if necessary 
+# replace <user> with your username (output of: whoami). 
+# change the path to the yabai binary if necessary (output of: which yabai) 
 <user> ALL = (root) NOPASSWD: /usr/local/bin/yabai --load-sa
 ```
 
