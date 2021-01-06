@@ -11,6 +11,9 @@ Now install the scripting addition.
 ```sh
 # install the scripting addition
 sudo yabai --install-sa
+
+# if macOS Big Sur, load the scripting addition manually; follow instructions below to automate on startup
+sudo yabai --load-sa
 ```
 
 To run yabai, simply start it. 
