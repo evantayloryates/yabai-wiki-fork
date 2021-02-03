@@ -39,12 +39,13 @@ brew services start yabai
 In macOS Big Sur we had to switch to using the mach API to inject the scripting addition. Injection now has to run with elevated (root) privileges, meaning that yabai is no longer able to automatically load the scripting addition during startup. However, you can use the following workaround to make it pretty much as seamless as it used to be. The trick is to allow your user to execute *yabai --load-sa* as the root user without having to enter a password. To do this, we add a new configuration entry that is loaded by */etc/sudoers*.
 
 ```
-# open/create a new file for writing using the vim editor (use nano or something if you are not familiar with vim)
-sudo vim /private/etc/sudoers.d/yabai
+# create a new file for writing - visudo uses the vim editor by default.
+# go read about this if you have no idea what is going on.
+sudo visudo -f /private/etc/sudoers.d/yabai
 
 # input the line below into the file you are editing.
 # replace <user> with your username (output of: whoami). 
-# change the path to the yabai binary if necessary (output of: which yabai) 
+# change the path to the yabai binary if necessary  (output of: which yabai)
 <user> ALL = (root) NOPASSWD: /usr/local/bin/yabai --load-sa
 ```
 
