@@ -18,6 +18,7 @@ codesign -fs 'yabai-cert' $(which yabai)
 Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Add `yabai` manually by using the `+` labelled button. When installed using Homebrew, yabai will usually be at `/usr/local/bin/yabai`. Check the box next to `yabai` to allow accessibility permissions.
 
 Now install the scripting addition.
+**(NOTE: The scripting addition does currently not support Apple Silicon (M1).)**
 
 ```sh
 # install the scripting addition
