@@ -18,6 +18,8 @@ The following features of yabai require System Integrity Protection to be (parti
 
 **NOTE: The scripting addition does currently not support Apple Silicon (M1).**
 
+See https://github.com/koekeishiya/yabai/issues/798#issuecomment-767084471 for a more in-depth explanation.
+
 ### How do I disable System Integrity Protection?
 
 1. Turn off your device
