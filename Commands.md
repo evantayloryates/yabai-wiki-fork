@@ -192,6 +192,36 @@ yabai -m window --swap first
 yabai -m window --swap mouse
 ```
 
+The following illustrates how you can use the swap operation to implement window cycling.
+
+cycle_clockwise.sh:
+```sh
+#!/bin/bash
+
+win=$(yabai -m query --windows --window last | jq '.id')
+
+while : ; do
+    yabai -m window $win --swap prev &> /dev/null
+    if [[ $? -eq 1 ]]; then
+        break
+    fi
+done
+```
+
+cycle_counterclockwise.sh
+```sh
+#!/bin/bash
+
+win=$(yabai -m query --windows --window first | jq '.id')
+
+while : ; do
+    yabai -m window $win --swap next &> /dev/null
+    if [[ $? -eq 1 ]]; then
+        break
+    fi
+done
+```
+
 Tiled windows can also be re-inserted ("warped") at other windows. 
 
 ```sh
