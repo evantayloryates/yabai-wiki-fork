@@ -46,7 +46,7 @@ nvram boot-args=-arm64e_preview_abi
 # INTEL
 #
 
-# If you're on Intel macOS 12.x.x or Intel macOS 11.0.1
+# If you're on Intel macOS 12.x.x or Intel macOS 11.x.x
 # Requires Filesystem Protections and Debugging Restrictions to be disabled (workaround because --without debug does not work)
 # (printed warning can be safely ignored)
 csrutil disable --with kext --with dtrace --with nvram --with basesystem
