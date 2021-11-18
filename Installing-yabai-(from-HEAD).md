@@ -18,7 +18,6 @@ codesign -fs 'yabai-cert' $(which yabai)
 Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Add `yabai` manually by using the `+` labelled button. When installed using Homebrew, yabai will usually be at `/usr/local/bin/yabai`. Check the box next to `yabai` to allow accessibility permissions.
 
 Now install the scripting addition.
-**(NOTE: The scripting addition does currently not support Apple Silicon (M1).)**
 
 ```sh
 # install the scripting addition
@@ -35,9 +34,9 @@ To run yabai, simply start it.
 brew services start yabai
 ```
 
-### macOS Big Sur - Automatically load scripting addition on startup
+### macOS Big Sur and Monterey - Automatically load scripting addition on startup
 
-In macOS Big Sur we had to switch to using the mach API to inject the scripting addition. Injection now has to run with elevated (root) privileges, meaning that yabai is no longer able to automatically load the scripting addition during startup. However, you can use the following workaround to make it pretty much as seamless as it used to be. The trick is to allow your user to execute *yabai --load-sa* as the root user without having to enter a password. To do this, we add a new configuration entry that is loaded by */etc/sudoers*.
+In (and after) macOS Big Sur we had to switch to using the mach API to inject the scripting addition. Injection now has to run with elevated (root) privileges, meaning that yabai is no longer able to automatically load the scripting addition during startup. However, you can use the following workaround to make it pretty much as seamless as it used to be. The trick is to allow your user to execute *yabai --load-sa* as the root user without having to enter a password. To do this, we add a new configuration entry that is loaded by */etc/sudoers*.
 
 ```
 # create a new file for writing - visudo uses the vim editor by default.
