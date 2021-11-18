@@ -25,7 +25,8 @@ See [this comment](https://github.com/koekeishiya/yabai/issues/798#issuecomment-
 Hold down <kbd>command ⌘</kbd><kbd>R</kbd> while booting your device.  
  
    **Apple Silicon [(apple docs)](https://support.apple.com/en-gb/guide/mac-help/mchl82829c17/12.0/mac/12.0):**  
-Press and hold the power button on your Mac until “Loading startup options” appears. Click Options, then click Continue.
+Press and hold the power button on your Mac until “Loading startup options” appears.  
+Click Options, then click Continue.
 3. In the menu bar, choose `Utilities`, then `Terminal`
 4.
 ```bash
