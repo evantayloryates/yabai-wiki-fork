@@ -16,8 +16,6 @@ The following features of yabai require System Integrity Protection to be (parti
 * toggle picture-in-picture for any given window
 * border for focused and inactive windows
 
-**NOTE: The scripting addition does currently not support Apple Silicon (M1).**
-
 See [this comment](https://github.com/koekeishiya/yabai/issues/798#issuecomment-767084471) for a more in-depth explanation.
 
 ### How do I disable System Integrity Protection?
