@@ -23,21 +23,41 @@ See [this comment](https://github.com/koekeishiya/yabai/issues/798#issuecomment-
 ### How do I disable System Integrity Protection?
 
 1. Turn off your device
-2. Hold down <kbd>command ⌘</kbd><kbd>R</kbd> while booting your device.
+2. **Intel [(apple docs)](https://support.apple.com/en-gb/guide/mac-help/mchl338cf9a8/12.0/mac/12.0):**  
+Hold down <kbd>command ⌘</kbd><kbd>R</kbd> while booting your device.  
+ 
+   **Apple Silicon [(apple docs)](https://support.apple.com/en-gb/guide/mac-help/mchl82829c17/12.0/mac/12.0):**  
+Press and hold the power button on your Mac until “Loading startup options” appears. Click Options, then click Continue.
 3. In the menu bar, choose `Utilities`, then `Terminal`
 4.
 ```bash
-# If you're on macOS 11.0.1
+#
+# APPLE SILICON
+#
+
+# If you're on Apple Silicon macOS 12.x.x
+# Requires Filesystem Protections, Debugging Restrictions and NVRAM Protection to be disabled
+# (printed warning can be safely ignored)
+csrutil disable --with kext --with dtrace --with basesystem
+
+# Apple Silicon needs to allow non-Apple-signed arm64e binaries 
+nvram boot-args=-arm64e_preview_abi
+
+#
+# INTEL
+#
+
+# If you're on Intel macOS 12.x.x or Intel macOS 11.0.1
 # Requires Filesystem Protections and Debugging Restrictions to be disabled (workaround because --without debug does not work)
 # (printed warning can be safely ignored)
 csrutil disable --with kext --with dtrace --with nvram --with basesystem
 
-# If you're on macOS 10.14 and 10.15
+# If you're on Intel macOS 10.14 and 10.15
 # Requires Filesystem Protections and Debugging Restrictions to be disabled
 # (printed warning can be safely ignored)
 csrutil enable --without debug --without fs
 
-# If you're on macOS 10.13
+# If you're on Intel macOS 10.13
 # (disables SIP completely)
 csrutil disable
 ```
