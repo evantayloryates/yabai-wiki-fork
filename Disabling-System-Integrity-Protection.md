@@ -14,7 +14,6 @@ The following features of yabai require System Integrity Protection to be (parti
 * sticky windows (make windows appear on all spaces)
 * move window by clicking anywhere in its frame
 * toggle picture-in-picture for any given window
-* border for focused and inactive windows
 
 See [this comment](https://github.com/koekeishiya/yabai/issues/798#issuecomment-767084471) for a more in-depth explanation.
 
