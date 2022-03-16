@@ -7,13 +7,12 @@ brew install koekeishiya/formulae/yabai
 Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Starting with `brew services start yabai` will prompt the user to allow `yabai` accessibility permissions. Check the box next to `yabai` to allow accessibility permissions.
 
 Now install the scripting addition.
-**(NOTE: The scripting addition does currently not support Apple Silicon (M1).)**
 
 ```sh
 # install the scripting addition
 sudo yabai --install-sa
 
-# if macOS Big Sur, load the scripting addition manually; follow instructions below to automate on startup
+# if macOS Big Sur or Monterey, load the scripting addition manually; follow instructions below to automate on startup
 sudo yabai --load-sa
 ```
 
