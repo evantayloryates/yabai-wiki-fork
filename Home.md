@@ -9,7 +9,7 @@
 
 ### What is yabai?
 
-yabai is a tiling window manager for macOS High Sierra 10.13.6, Mojave 10.14.4+, Catalina 10.15.0+ and Big Sur 11.0.1.  
+yabai is a tiling window manager for macOS High Sierra 10.13.6, Mojave 10.14.4+, Catalina 10.15.0+, Big Sur 11.0.1+ and Monterey 12.0.0+.  
 It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
 
 A flexible and easy-to-grok command line interface allows you to control and query windows, spaces and displays to enable powerful integration with tools like [&nearr;&nbsp;skhd][gh-skhd] to allow you to work more efficiently with macOS. Create custom keybindings to control windows, spaces and displays in practically no time and get your hands off the mouse and trackpad and back onto the keyboard where actual work gets done.
