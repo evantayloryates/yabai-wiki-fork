@@ -40,7 +40,7 @@ tail -f /usr/local/var/log/yabai/yabai.out.log
 Layout defines whether windows are tiled ("managed", "bsp") by yabai or left alone ("float"). This setting can be defined on a per–space basis.
 
 ```sh
-# bsp or float (default: bsp)
+# bsp or float (default: float)
 yabai -m config layout bsp
 
 # Override default layout for space 2 only
@@ -99,7 +99,7 @@ Additionally, yabai can enable you to move and resize windows by clicking anywhe
 # set mouse interaction modifier key (default: fn)
 yabai -m config mouse_modifier fn
 
-# set modifier + left-click drag to resize window (default: move)
+# set modifier + left-click drag to move window (default: move)
 yabai -m config mouse_action1 move
 
 # set modifier + right-click drag to resize window (default: resize)
