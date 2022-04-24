@@ -7,7 +7,7 @@ System Integrity Protection protects some files and directories from being modif
 The following features of yabai require System Integrity Protection to be (partially) disabled:
 
 * focus/create/destroy space without animation
-* move space (and its windows) left, right or to another display
+* move existing space left, right, or to another display
 * remove window shadows
 * enable window transparency
 * control window layers (make windows appear topmost)
