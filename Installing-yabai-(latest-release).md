@@ -33,11 +33,11 @@ In macOS Big Sur we had to switch to using the mach API to inject the scripting 
 sudo visudo -f /private/etc/sudoers.d/yabai
 
 # input the line below into the file you are editing.
-#  change the path to the yabai binary if necessary (output of: which yabai).
+#  replace <yabai> with the path to the yabai binary (output of: which yabai).
 #  replace <user> with your username (output of: whoami). 
 #  replace <hash> with the sha256 hash of the yabai binary (output of: shasum -a 256 $(which yabai)).
 #   this hash must be updated manually after running brew upgrade.
-<user> ALL = (root) NOPASSWD: sha256:<hash> /usr/local/bin/yabai --load-sa
+<user> ALL = (root) NOPASSWD: sha256:<hash> <yabai> --load-sa
 ```
 
 After the above edit has been made, simply add the command to load the scripting addition to the top of your yabairc config file
