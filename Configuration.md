@@ -91,7 +91,9 @@ yabai -m config split_ratio 0.5
 
 ### Mouse support
 
-When you drag a tiled window onto another, yabai swaps their positions in the window tree. If you resize a tiled window, yabai will adjust splits to fit automatically.
+If you resize a tiled window, yabai will attempt to adjust splits to fit automatically.
+
+When you drag a tiled window onto another, yabai will either swap their positions in the window tree, or modify the window tree by splitting the region occupied by the window. The action is determined by drop-zones; 25% of the region towards a particular edge will result in a warp operation towards that direction, and the center (50%) of the window will trigger either a swap or stack operation (based on the value of `yabai -m config mouse_drop_action`). See [this picture](https://user-images.githubusercontent.com/4488655/61372700-23c32e00-a898-11e9-8052-aeb5db9f4e13.png) for a visual illustration.
 
 Additionally, yabai can enable you to move and resize windows by clicking anywhere on them while holding a modifier key.
 
