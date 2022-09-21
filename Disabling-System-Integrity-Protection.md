@@ -10,6 +10,7 @@ The following features of yabai require System Integrity Protection to be (parti
 * move existing space left, right, or to another display
 * remove window shadows
 * enable window transparency
+* enable window animations
 * control window layers (make windows appear topmost or on the desktop)
 * sticky windows (make windows appear on all spaces on the display that contains the window)
 * toggle picture-in-picture for any given window
