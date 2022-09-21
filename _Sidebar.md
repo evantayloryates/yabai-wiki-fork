@@ -21,7 +21,7 @@
   - [Configure scripting addition](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition)
 - [Install: Dev version](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD))
   - [Install updates](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#updating-to-latest-head)
-  - [Automatically load scripting addition](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#macos-big-sur-and-monterey---automatically-load-scripting-addition-on-startup)
+  - [Configure scripting addition](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#configure-scripting-addition)
 - [Uninstall](https://github.com/koekeishiya/yabai/wiki/Uninstalling-yabai)
 
 
