@@ -1,7 +1,6 @@
 <h1 align="center">yabai</h1>
 <p align="center">Tiling window management native to the Mac.</p>
 <p align="center">
-    <a href="https://travis-ci.org/koekeishiya/yabai"><img src="https://travis-ci.org/koekeishiya/yabai.svg?branch=master" alt="ci status"></a>
     <a href="https://github.com/koekeishiya/yabai/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/koekeishiya/yabai.svg?color=green" alt="license"></a>
     <a href="https://github.com/koekeishiya/yabai/blob/master/CHANGELOG.md"><img src="https://img.shields.io/badge/view-changelog-green.svg" alt="changelog"></a>
     <a href="https://github.com/koekeishiya/yabai/releases"><img src="https://img.shields.io/github/commits-since/koekeishiya/yabai/latest.svg?color=green" alt="version"></a>
@@ -9,7 +8,7 @@
 
 ### What is yabai?
 
-yabai is a tiling window manager for macOS High Sierra 10.13.6, Mojave 10.14.4+, Catalina 10.15.0+, Big Sur 11.0.1+ and Monterey 12.0.0+.  
+yabai is a tiling window manager for macOS Big Sur 11.0.1+ and Monterey 12.0.0+.  
   
 It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
 
@@ -21,8 +20,10 @@ Please read the below requirements and recommendations carefully. Make sure you 
 
 |Requirement|Note|
 |-:|:-|
-|Operating&nbsp;System|macOS&nbsp;High&nbsp;Sierra&nbsp;10.13.6, Mojave&nbsp;10.14.4+, Catalina&nbsp;10.15.0+, Big Sur&nbsp;11.0.1+ and Monterey&nbsp;12.0.0+ are supported.|
+|Operating&nbsp;System&nbsp;Intel x86-64|Big Sur 11.0.1+ and Monterey 12.0.0+ is supported.|
+|Operating&nbsp;System&nbsp;Apple Silicon|Monterey 12.0.0+ is supported.|
 |Accessibility&nbsp;API|yabai must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
+|Screen Recording|yabai must be given Screen Recording permission if and only if you want to enable window animations, and will request access when necessary. The application must be restarted after access has been granted.|
 |Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Displays have separate Spaces" must be enabled.|
 
 |Recommendation|Note|
@@ -36,7 +37,7 @@ Please read the below requirements and recommendations carefully. Make sure you 
 
 yabai can be installed via Homebrew from a custom tap. It does, however, require you to partially disable System Integrity Protection ("rootless"), because it controls windows by acting through Dock.app&thinsp;—&thinsp;which is the sole owner of the main connection to the window server.
 
-1. Optional: Disable System Integrity Protection (required for many advanced features)
+1. Optional: Partially disable System Integrity Protection (required for many advanced features)
 2. Install yabai and configure macOS to allow it to run
 3. Configure yabai to your liking
 4. Optional: Integrate yabai with other software like [&nearr;&nbsp;skhd][gh-skhd] for keyboard shortcuts or [&nearr;&nbsp;Übersicht][gh-uebersicht] for desktop widgets
@@ -57,7 +58,7 @@ Useful HTML entities for this table:
 ||yabai|[&nearr;&nbsp;Amethyst][gh-amethyst]|
 |-:|:-:|:-:|
 |**General**|
-|Supported macOS versions|10.13–12.0|10.12–12.0|
+|Supported macOS versions|11.0–12.0|10.12–12.0|
 |Works with SIP enabled|&#10003;*|&#10003;|
 |Integrate with 3rd party tools|Signals, Rules and Commands|&#10007;|
 |**Windows**|
