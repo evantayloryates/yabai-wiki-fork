@@ -15,7 +15,7 @@ brew services start yabai
 
 ### Updating to the latest release
 
-To update yabai to the latest version, simply upgrade it with Homebrew and reconfigure the scripting addition:
+To update yabai to the latest version, simply upgrade it with Homebrew and [reconfigure the scripting addition](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition) again:
 
 ```sh
 # stop yabai
