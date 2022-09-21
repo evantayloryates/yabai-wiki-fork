@@ -26,7 +26,7 @@ brew services start yabai
 
 ### Updating to latest HEAD
 
-To upgrade yabai to the latest version from HEAD, simply reinstall it with Homebrew, codesign it, reinstall the scripting addition and restart *Dock.app* again:
+To upgrade yabai to the latest version from HEAD, simply reinstall it with Homebrew, codesign it, and [reconfigure the scripting addition](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#configure-scripting-addition) again:
 
 ```sh
 # set codesigning certificate name here (default: yabai-cert)
