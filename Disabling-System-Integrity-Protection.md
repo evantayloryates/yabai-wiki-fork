@@ -46,15 +46,6 @@ csrutil disable --with kext --with dtrace --with basesystem
 # Requires Filesystem Protections and Debugging Restrictions to be disabled (workaround because --without debug does not work)
 # (printed warning can be safely ignored)
 csrutil disable --with kext --with dtrace --with nvram --with basesystem
-
-# If you're on Intel macOS 10.14 and 10.15
-# Requires Filesystem Protections and Debugging Restrictions to be disabled
-# (printed warning can be safely ignored)
-csrutil enable --without debug --without fs
-
-# If you're on Intel macOS 10.13
-# (disables SIP completely)
-csrutil disable
 ```
 
 5. Reboot
@@ -65,7 +56,6 @@ sudo nvram boot-args=-arm64e_preview_abi
 ```
 7. You can verify that System Integrity Protection is turned off by running `csrutil status`, which returns `System Integrity Protection status: disabled.` if it is turned off (it may show `unknown` for newer versions of macOS when disabling SIP partially).
 
-If you are running yabai on macOS 10.13.6 (High Sierra) you can and should re–enable System Integrity Protection after the installation has completed. Repeat the steps above, but run `csrutil enable` instead at step 4.
-The same instructions apply if you ever want to re–enable System Integrity Protection after uninstalling yabai.
+If you ever want to re–enable System Integrity Protection after uninstalling yabai; repeat the steps above, but run `csrutil enable` instead at step 4.
 
 Please note that System Integrity Protection will be re–enabled during device repairs or analysis at any Apple Retail Store or Apple Authorized Service Provider. You will have to repeat this step after getting your device back.
