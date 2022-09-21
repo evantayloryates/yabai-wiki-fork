@@ -28,7 +28,7 @@ Please read the below requirements and recommendations carefully. Make sure you 
 
 |Recommendation|Note|
 |-:|:-|
-|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be (partially) disabled for yabai to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections, and enables additional features of yabai. If you are running on macOS High Sierra 10.13.6, you can reenable SIP after the scripting addition has been installed.|
+|System&nbsp;Integrity&nbsp;Protection|System Integrity Protection needs to be (partially) disabled for yabai to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections, and enables additional features of yabai.|
 |Code&nbsp;Signing|When building from source (or installing from HEAD), it is recommended to codesign the binary  so it retains its accessibility and automation privileges when updated or rebuilt.|
 |Mission&nbsp;Control|In the Mission Control preferences pane in System Preferences, the setting "Automatically rearrange Spaces based on most recent use" should be disabled for commands that rely on the ordering of spaces to work reliably.|
 
