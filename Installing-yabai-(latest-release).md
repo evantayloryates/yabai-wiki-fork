@@ -6,7 +6,7 @@ brew install koekeishiya/formulae/yabai
 
 Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Starting with `brew services start yabai` will prompt the user to allow `yabai` accessibility permissions. Check the box next to `yabai` to allow accessibility permissions.
 
-If you disabled System Integrity Protection; configure the scripting addition. Afterwards simply start yabai. 
+If you disabled System Integrity Protection; [configure the scripting addition](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#configure-scripting-addition). Afterwards simply start yabai. 
 
 ```sh
 # start yabai
