@@ -61,7 +61,7 @@ sudo visudo -f /private/etc/sudoers.d/yabai
 #  replace <hash> with the sha256 hash of the yabai binary (output of: shasum -a 256 $(which yabai)).
 #   this hash must be updated manually after running brew upgrade.
 
-<user> ALL = (root) NOPASSWD: sha256:<hash> <yabai> --load-sa
+<user> ALL=(root) NOPASSWD: sha256:<hash> <yabai> --load-sa
 ```
 
 After the above edit has been made, add the command to load the scripting addition at the top of your yabairc config file
