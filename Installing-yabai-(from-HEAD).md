@@ -29,7 +29,7 @@ If you disabled System Integrity Protection; [configure the scripting addition](
 
 ```sh
 # start yabai
-brew services start yabai
+yabai --start-service
 ```
 
 ### Updating to latest HEAD
@@ -41,14 +41,14 @@ To upgrade yabai to the latest version from HEAD, simply reinstall it with Homeb
 export YABAI_CERT=
 
 # stop yabai
-brew services stop koekeishiya/formulae/yabai
+yabai --stop-service
 
 # reinstall yabai
 brew reinstall koekeishiya/formulae/yabai
 codesign -fs "${YABAI_CERT:-yabai-cert}" "$(brew --prefix yabai)/bin/yabai"
 
 # finally, start yabai
-brew services start koekeishiya/formulae/yabai
+yabai --start-service
 ```
 
 ### Configure scripting addition
