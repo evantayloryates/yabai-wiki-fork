@@ -10,7 +10,7 @@ If you disabled System Integrity Protection; [configure the scripting addition](
 
 ```sh
 # start yabai
-brew services start yabai
+yabai --start-service
 ```
 
 ### Updating to the latest release
@@ -19,13 +19,13 @@ To update yabai to the latest version, simply upgrade it with Homebrew and [reco
 
 ```sh
 # stop yabai
-brew services stop yabai
+yabai --stop-service
 
 # upgrade yabai
 brew upgrade yabai
 
 # start yabai
-brew services start yabai
+yabai --start-service
 ```
 
 ### Configure scripting addition
