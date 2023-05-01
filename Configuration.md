@@ -20,17 +20,14 @@ All of the configuration options can be changed at runtime as well.
 
 ### Debug output and error reporting
 
-In the case that something is not working as you're expecting, please make sure to take a look in the output and error log. To enable debug output make sure that your configuration file contains `yabai -m config debug_output on` or that yabai is launched with the `--verbose` flag. If you are running through `brew services` the log files can be found in the following directory: 
+In the case that something is not working as you're expecting, please make sure to take a look in the output and error log. To enable debug output make sure that your configuration file contains `yabai -m config debug_output on` or that yabai is launched with the `--verbose` flag. If you are running yabai as a service, the output and error log can be viewed as follows: 
 
 ```sh
-# directory containing log files (HOMEBREW_PREFIX defaults to /usr/local unless you manually specified otherwise)
-HOMEBREW_PREFIX/var/log/yabai/
-
 # view the last lines of the error log 
-tail -f /usr/local/var/log/yabai/yabai.err.log
+tail -f /tmp/yabai_$USER.err.log
 
 # view the last lines of the debug log
-tail -f /usr/local/var/log/yabai/yabai.out.log
+tail -f /tmp/yabai_$USER.out.log
 ```
 
 ### Tiling options
