@@ -2,7 +2,10 @@ The following steps will help you remove all traces of yabai from your system.
 
 ```sh
 # stop yabai
-brew services stop yabai
+yabai --stop-service
+
+# remove service file
+yabai --uninstall-service
 
 # uninstall the scripting addition
 sudo yabai --uninstall-sa
@@ -10,9 +13,9 @@ sudo yabai --uninstall-sa
 # uninstall yabai
 brew uninstall yabai
 
-# these are logfiles that may be created when running yabai using brew services.
-# path may differ if a custom brew prefix has been selected.
-rm -rf /usr/local/var/log/yabai
+# these are logfiles that may be created when running yabai as a service.
+rm -rf /tmp/yabai_$USER.out.log
+rm -rf /tmp/yabai_$USER.err.log
 
 # remove config and various temporary files
 rm ~/.yabairc
