@@ -1,12 +1,12 @@
 ### Quickly restart the yabai launch agent
 
-When running through `brew services`, restarting yabai using `brew services restart yabai` can take a few seconds. You can achieve (almost) the same effect by running this command instead:
+When running as a service, the following command can be used:
 
 ```sh
-launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+yabai --restart-service
 
 # e.g. bind to key in skhd:
-# ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+# ctrl + alt + cmd - r : yabai --restart-service"
 ```
 
 ### Split yabai configuration across multiple files
@@ -135,7 +135,7 @@ function install_updates() {
 	fi
 	
 	echo "[yabai-update] restarting yabai"
-	launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+	yabai --restart-service
 }
 
 (main && rm -f "${LOCKFILE}") &
