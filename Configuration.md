@@ -140,7 +140,7 @@ yabai -m config normal_window_opacity 0.9
 
 ### Status bar
 
-Third-party tools like [&rightarrow;&nbsp;Übersicht][gh-uebersicht] can be used to create custom status bars.
+Third-party tools like [&rightarrow;&nbsp;Übersicht][gh-uebersicht] and [&rightarrow;&nbsp;Sketchybar][gh-sketchybar] can be used to create custom status bars.
 
 There is also an option to integrate your custom bar with the padding functionality (specifically: `space --toggle padding`)  that yabai provides. Note that you do not need to include this padding in the regular space settings.
 
@@ -155,3 +155,4 @@ You can turn on autohiding of the macOS menubar so that it only shows up when yo
 
 [docs-config]: https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc#config
 [gh-uebersicht]: https://github.com/felixhageloh/uebersicht
+[gh-sketchybar]: https://github.com/felixkratz/sketchybar
