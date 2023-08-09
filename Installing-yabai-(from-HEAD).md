@@ -18,10 +18,8 @@ Now onto installing yabai:
 
 ```sh
 brew install koekeishiya/formulae/yabai --HEAD
-codesign -fs 'yabai-cert' $(which yabai)
+codesign -fs 'yabai-cert' $(brew --prefix yabai)/bin/yabai
 ```
-
-Make sure that the codesign command above affected the actual yabai binary, and not some sort of symlink created by brew.
 
 Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Add `yabai` manually by using the `+` labelled button. When installed using Homebrew, yabai will usually be at `/usr/local/bin/yabai`. Check the box next to `yabai` to allow accessibility permissions.
 
