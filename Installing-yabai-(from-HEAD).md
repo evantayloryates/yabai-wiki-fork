@@ -21,7 +21,7 @@ brew install koekeishiya/formulae/yabai --HEAD
 codesign -fs 'yabai-cert' $(brew --prefix yabai)/bin/yabai
 ```
 
-Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Add `yabai` manually by using the `+` labelled button. When installed using Homebrew, yabai will usually be at `/usr/local/bin/yabai`. Check the box next to `yabai` to allow accessibility permissions.
+Open `System Preferences.app` and navigate to `Security & Privacy`, then `Privacy`, then `Accessibility`. Click the lock icon at the bottom and enter your password to allow changes to the list. Starting with `yabai --start-service` will prompt the user to allow `yabai` accessibility permissions. Check the box next to `yabai` to allow accessibility permissions.
 
 If you disabled System Integrity Protection; [configure the scripting addition](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)#configure-scripting-addition). Afterwards simply start yabai. 
 
