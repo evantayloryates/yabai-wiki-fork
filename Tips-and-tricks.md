@@ -152,3 +152,47 @@ If Emacs is still not recognized by yabai, try enabling menu-bar-mode.
 ```emacs-lisp
 (menu-bar-mode t)
 ```
+
+### Constrain space focus to current display with optional cycling
+
+Focus next space of current display. No-op if the current space is the last space of its display.
+
+space_focus_next.sh
+```
+if [[ $(yabai -m query --spaces --display | jq '.[-1]."has-focus"') == "false" ]]; then yabai -m space --focus next; fi
+```
+
+Focus previous space of current display. No-op if the current space is the first space of its display.
+
+space_focus_prev.sh
+```
+if [[ $(yabai -m query --spaces --display | jq '.[0]."has-focus"') == "false" ]]; then yabai -m space --focus prev; fi
+```
+
+Focus next space of current display. Wrap to the first space of the current display if the current space is the last space of its display.
+
+space_cycle_next.sh
+```
+info=$(yabai -m query --spaces --display)
+last=$(echo $info | jq '.[-1]."has-focus"')
+
+if [[ $last == "false" ]]; then
+    yabai -m space --focus next
+else
+    yabai -m space --focus $(echo $info | jq '.[0].index')
+fi
+```
+
+Focus previous space of current display. Wrap to the last space of the current display if the current space is the first space of its display.
+
+space_cycle_prev.sh
+```
+info=$(yabai -m query --spaces --display)
+first=$(echo $info | jq '.[0]."has-focus"')
+
+if [[ $first == "false" ]]; then
+    yabai -m space --focus prev
+else
+    yabai -m space --focus $(echo $info | jq '.[-1].index')
+fi
+```
