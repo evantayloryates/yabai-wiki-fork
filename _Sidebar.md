@@ -73,5 +73,6 @@
 - [Fix folders opened from Desktop not tiling](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#fix-folders-opened-from-desktop-not-tiling)
 - [Auto updating from HEAD via brew](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#auto-updating-from-head-via-brew)
 - [Tiling Emacs](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#tiling-emacs)
+- [Constrain space focus to current display with optional cycling](https://github.com/koekeishiya/yabai/wiki/Tips-and-tricks#constrain-space-focus-to-current-display-with-optional-cycling)
 
 </details>
