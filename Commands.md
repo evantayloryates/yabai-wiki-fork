@@ -286,6 +286,9 @@ yabai -m window --display recent
 
 # move window to space 2
 yabai -m window --space 2
+
+# move window to space 2 and switch to space 2
+yabai -m window --space 2 --focus
 ```
 
 Tiled windows may also be zoomed to either occupy the parent nodes space or the full screen, and windows may also be moved into their own space ("native fullscreen").
