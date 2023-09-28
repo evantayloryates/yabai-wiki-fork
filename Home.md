@@ -25,7 +25,9 @@ Please read the below requirements and recommendations carefully. Make sure you 
 |Operating&nbsp;System&nbsp;Apple Silicon|Monterey 12.0.0+, and Ventura 13.0.0+ is supported.|
 |Accessibility&nbsp;API|yabai must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
 |Screen Recording|yabai must be given Screen Recording permission if and only if you want to enable window animations, and will request access when necessary. The application must be restarted after access has been granted.|
-|Mission&nbsp;Control|In the Desktop and Dock/Mission Control pane in System Settings/System Preferences, the setting "Displays have separate Spaces" must be enabled.|
+|System&nbsp;Preferences&nbsp;(macOS 11.x, 12.x)|In the Mission Control pane, the setting "Displays have separate Spaces" must be enabled.|
+|System&nbsp;Settings&nbsp;(macOS 13.x, 14.x)|In the Desktop & Dock tab, inside the Mission Control pane, the setting "Displays have separate Spaces" must be enabled.|
+
 
 Please also take note of the following caveats.
 
@@ -34,8 +36,8 @@ Please also take note of the following caveats.
 |System&nbsp;Integrity&nbsp;Protection (Optional)|System Integrity Protection can be (partially) disabled for yabai to inject a scripting addition into Dock.app for controlling windows with functions that require elevated privileges. This enables control of the window server, which is the sole owner of all window connections, and enables additional features of yabai.|
 |Code&nbsp;Signing|When building from source (or installing from HEAD), it is necessary to codesign the binary so it retains its accessibility and automation privileges when updated or rebuilt.|
 |System&nbsp;Preferences&nbsp;(macOS 11.x, 12.x)|In the Mission Control pane, the setting "Automatically rearrange Spaces based on most recent use" should be disabled for commands that rely on the ordering of spaces to work reliably.|
-|System&nbsp;Settings&nbsp;(macOS 13.x, 14.x)|In the Desktop & Dock tab under the Mission Control pane, the setting "Automatically rearrange Spaces based on most recent use" should be disabled for commands that rely on the ordering of spaces to work reliably.|
-|System&nbsp;Settings&nbsp;(macOS 14.x)|In the Desktop & Dock tab under the Dock & Stage Manager pane, the setting "Show Items On Desktop" should be enabled for display and space focus commands to work reliably in multi-display configurations.|
+|System&nbsp;Settings&nbsp;(macOS 13.x, 14.x)|In the Desktop & Dock tab, inside the Mission Control pane, the setting "Automatically rearrange Spaces based on most recent use" should be disabled for commands that rely on the ordering of spaces to work reliably.|
+|System&nbsp;Settings&nbsp;(macOS 14.x)|In the Desktop & Dock tab, inside the Dock & Stage Manager pane, the setting "Show Items On Desktop" should be enabled for display and space focus commands to work reliably in multi-display configurations.|
 
 
 ### Quickstart guide
