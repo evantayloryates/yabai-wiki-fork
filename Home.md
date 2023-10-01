@@ -9,7 +9,7 @@
 
 ### What is yabai?
 
-yabai is a tiling window manager for macOS Big Sur 11.0.1+ and Monterey 12.0.0+.  
+yabai is a tiling window manager for macOS Big Sur 11.0.0+, Monterey 12.0.0+, Ventura 13.0.0+, and Sonoma 14.0.0  
   
 It automatically modifies your window layout using a binary space partitioning algorithm to allow you to focus on the content of your windows without distractions.
 
@@ -21,8 +21,8 @@ Please read the below requirements and recommendations carefully. Make sure you 
 
 |Requirement|Note|
 |-:|:-|
-|Operating&nbsp;System&nbsp;Intel x86-64|Big Sur 11.0.0+, Monterey 12.0.0+, and Ventura 13.0.0+ is supported.|
-|Operating&nbsp;System&nbsp;Apple Silicon|Monterey 12.0.0+, and Ventura 13.0.0+ is supported.|
+|Operating&nbsp;System&nbsp;Intel x86-64|Big Sur 11.0.0+, Monterey 12.0.0+, Ventura 13.0.0+, and Sonoma 14.0.0 is supported.|
+|Operating&nbsp;System&nbsp;Apple Silicon|Monterey 12.0.0+, Ventura 13.0.0+, and Sonoma 14.0.0 is supported.|
 |Accessibility&nbsp;API|yabai must be given permission to utilize the Accessibility API and will request access upon launch. The application must be restarted after access has been granted.|
 |Screen Recording|yabai must be given Screen Recording permission if and only if you want to enable window animations, and will request access when necessary. The application must be restarted after access has been granted.|
 |System&nbsp;Preferences&nbsp;(macOS 11.x, 12.x)|In the Mission Control pane, the setting "Displays have separate Spaces" must be enabled.|
@@ -65,7 +65,7 @@ Useful HTML entities for this table:
 ||yabai|[&nearr;&nbsp;Amethyst][gh-amethyst]|
 |-:|:-:|:-:|
 |**General**|
-|Supported macOS versions|11.0–13.0|10.15–13.0|
+|Supported macOS versions|11.0–14.0|10.15–14.0|
 |Works with SIP enabled|&#10003;*|&#10003;|
 |Integrate with 3rd party tools|Signals, Rules and Commands|&#10007;|
 |**Windows**|
